@@ -25,30 +25,30 @@ import Stack from "@mui/material/Stack";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function CenteredFooter({ company, links, socials, light }) {
+function CenteredFooter({ company, socials, light }) {
   const { href, name } = company;
 
   const year = new Date().getFullYear();
 
-  const renderLinks = links.map((link) => (
-    <MKTypography
-      key={link.name}
-      component={Link}
-      href={link.href}
-      variant="body2"
-      color={light ? "white" : "secondary"}
-      fontWeight="regular"
-    >
-      {link.name}
-    </MKTypography>
-  ));
+  // const renderLinks = links.map((link) => (
+  //   <MKTypography
+  //     key={link.name}
+  //     component={Link}
+  //     href={link.href}
+  //     variant="body2"
+  //     color={light ? "white" : "secondary"}
+  //     fontWeight="regular"
+  //   >
+  //     {link.name}
+  //   </MKTypography>
+  // ));
 
   const renderSocials = socials.map((social) => (
     <MKTypography
@@ -64,9 +64,9 @@ function CenteredFooter({ company, links, socials, light }) {
   ));
 
   return (
-    <MKBox component="footer" py={6}>
+    <MKBox component="footer" py={4}>
       <Grid container justifyContent="center">
-        <Grid item xs={10} lg={8}>
+        {/* <Grid item xs={10} lg={8}>
           <Stack
             direction="row"
             flexWrap="wrap"
@@ -76,7 +76,7 @@ function CenteredFooter({ company, links, socials, light }) {
           >
             {renderLinks}
           </Stack>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} lg={8}>
           <Stack display="flex" direction="row" justifyContent="center" spacing={3} mt={1} mb={3}>
             {renderSocials}
@@ -84,7 +84,7 @@ function CenteredFooter({ company, links, socials, light }) {
         </Grid>
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
           <MKTypography variant="body2" color={light ? "white" : "secondary"}>
-            Copyright &copy; {year} Material by{" "}
+            Copyright &copy; {year} created by{" "}
             <MKTypography
               component={Link}
               href={href}
@@ -105,30 +105,17 @@ function CenteredFooter({ company, links, socials, light }) {
 
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://github.com/Stelioz", name: "Stelioz" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Company" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/presentation", name: "Team" },
-    { href: "https://www.creative-tim.com/templates/react", name: "Products" },
     { href: "https://www.creative-tim.com/blog", name: "Blog" },
     { href: "https://www.creative-tim.com/license", name: "License" },
   ],
   socials: [
-    { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/CreativeTim/" },
-    {
-      icon: <TwitterIcon fontSize="small" />,
-      link: "https://twitter.com/creativetim",
-    },
-    {
-      icon: <InstagramIcon fontSize="small" />,
-      link: "https://www.instagram.com/creativetimofficial/",
-    },
-    {
-      icon: <PinterestIcon fontSize="small" />,
-      link: "https://ro.pinterest.com/thecreativetim/",
-    },
-    { icon: <GitHubIcon fontSize="small" />, link: "https://github.com/creativetimofficial" },
+    { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/HitCerth/" },
+    { icon: <TwitterIcon fontSize="small" />,  link: "https://x.com/HitCerth",},
+    { icon: <InstagramIcon fontSize="small" />, link: "https://www.instagram.com/hit.certh/", },
+    { icon: <YouTubeIcon fontSize="small" />, link: "https://www.youtube.com/channel/UCS9jvbxsnB-lS74olF4R_5g", },
+    { icon: <LinkedInIcon fontSize="small" />, link: "https://www.linkedin.com/company/hellenic-institute-of-transport/" },
   ],
   light: false,
 };

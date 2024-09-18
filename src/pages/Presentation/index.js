@@ -21,20 +21,20 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
+// import MKSocialButton from "components/MKSocialButton";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import Navbar from "examples/Navbars/DefaultNavbar";
+import Footer from "examples/Footers/CenteredFooter";
+// import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
+// import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
+// import Pages from "pages/Presentation/sections/Pages";
+// import Testimonials from "pages/Presentation/sections/Testimonials";
+// import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
 import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
@@ -45,55 +45,78 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
+import logo from "assets/images/HITlogos/HITLogo.png";
 
 function Presentation() {
   return (
     <>
-      <DefaultNavbar
+      <Navbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
+        // action={{
+        //   type: "external",
+        //   route: "https://www.creative-tim.com/product/material-kit-react",
+        //   label: "free download",
+        //   color: "info",
+        // }}
         sticky
       />
       <MKBox
-        minHeight="75vh"
+        minHeight="50vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: ({ palette: { gradients }, functions: { rgba, linearGradient } }) =>
+            `${linearGradient(
+              rgba(gradients.dark.main, 0.8),
+              rgba(gradients.dark.state, 0.8)
+            )}, url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",
           placeItems: "center",
         }}
+        // sx={{
+        //   backgroundImage: `url(${bgImage})`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "top",
+        //   display: "grid",
+        //   placeItems: "center",
+        // }}
       >
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+            <MKBox
+              mb={7}
+              sx={{
+                backgroundImage: `url(${logo})`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                placeItems: "center",
+                height: "110px",
+                width: "100%",
+              }}
+            />
             <MKTypography
-              variant="h1"
+              variant="h2"
               color="white"
               mt={-6}
-              mb={1}
+              mb={0}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Hellenic Institute of Transport{" "}
             </MKTypography>
             <MKTypography
-              variant="body1"
+              variant="h2"
               color="white"
               textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
+              px={{ xs: 12, lg: 7 }}
+              mt={0}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Piraeus Office
             </MKTypography>
           </Grid>
         </Container>
@@ -109,15 +132,31 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
+        <Container>
+          <Grid container spacing={3} mt={2}>
+            <Grid item ml={2} xs={12} sm={12} lg={12}>
+              <MKTypography variant="body1" fontWeight="light" color="black">
+                The Hellenic Institute of Transport (HIT) of the Centre for Research and Technology Hellas (CERTH)
+                is the leading transport research Institute in the country and one of
+                the most recognized research bodies at European and international level, with a
+                strong expertise in shipping and maritime transport, and significant research
+                experience on sustainable urban and regional development. The aim of Piraeus
+                Office activities is to bring together research with businesses and local industry,
+                enhancing the innovation and competitiveness ecosystem. The Piraeus Office is housed
+                in the Piraeus Chamber of Commerce and Industry (PCCI), in the heart of the city of Piraeus. 
+              </MKTypography>
+            </Grid>
+          </Grid>
+        </Container>
         <Counters />
-        <Information />
-        <DesignBlocks />
-        <Pages />
-        <Container sx={{ mt: 6 }}>
+        {/* <DesignBlocks />
+        <Pages /> */}
+        <Container sx={{ mt: 2 }}>
           <BuiltByDevelopers />
         </Container>
-        <Container>
-          <Grid container spacing={3}>
+        <Information />
+        {/* <Container>
+          <Grid container spacing={3} mb={5}>
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 variant="gradient"
@@ -159,10 +198,10 @@ function Presentation() {
               />
             </Grid>
           </Grid>
-        </Container>
-        <Testimonials />
-        <Download />
-        <MKBox pt={18} pb={6}>
+        </Container> */}
+        {/* <Testimonials />
+        <Download /> */}
+        {/* <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
@@ -213,10 +252,10 @@ function Presentation() {
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
+        </MKBox> */}
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+      <MKBox pt={0} px={0} mt={0}>
+        <Footer content={footerRoutes} />
       </MKBox>
     </>
   );
