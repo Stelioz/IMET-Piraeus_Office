@@ -23,19 +23,21 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
+import PhoneIcon from "@mui/icons-material/Phone";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailIcon from "@mui/icons-material/Mail";
+
 
 // Images
-import team1 from "assets/images/team-5.jpg";
+import team1 from "assets/images/team-2.jpg";
 import team2 from "assets/images/bruce-mars.jpg";
 import team3 from "assets/images/ivana-squares.jpg";
-import team4 from "assets/images/ivana-square.jpg";
 
 function Team() {
   return (
     <MKBox
       component="section"
-      variant="gradient"
-      bgColor="dark"
+      bgColor="info"
       position="relative"
       py={6}
       px={{ xs: 2, lg: 0 }}
@@ -45,55 +47,164 @@ function Team() {
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
             <MKTypography variant="h3" color="white">
-              The Executive Team
-            </MKTypography>
-            <MKTypography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
+              The Team
             </MKTypography>
           </Grid>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCard
-                image={team1}
-                name="Emma Roberts"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCard
-                image={team2}
-                name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team3}
-                name="Ivana Flow"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team4}
-                name="Marquez Garcia"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </MKBox>
-          </Grid>
+              <MKBox mb={1}>
+                <HorizontalTeamCard
+                  image={team1}
+                  name={
+                    <a
+                      href="https://www.linkedin.com/in/xkitsios/"
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      Xenofon Kitsios
+                    </a>
+                  }
+                  position={{ color: "info", label: "Developer" }}
+                  description={{
+                    color: "#004978",
+                    content: (
+                      <>
+                        <p>
+                          <span style={{ display: "flex", alignItems: "center" }}>
+                            <LinkedInIcon fontSize="small" style={{ marginLeft: "-2px" }} />
+                            <a
+                              href="https://www.linkedin.com/in/xkitsios/"
+                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                            >
+                              LinkedIn
+                            </a>
+                          </span>
+                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                            <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                            <a
+                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                            >
+                              +30.211.0130490
+                            </a>
+                          </span>
+                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                            <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                            <a
+                              href="mailto:xkitsios@certh.gr"
+                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                            >
+                              xkitsios@certh.gr
+                            </a>
+                          </span>
+                        </p>
+                      </>
+                    ),
+                  }}
+                />
+              </MKBox>
+            </Grid>
+            <Grid item xs={12} lg={6}>
+              <MKBox mb={1}>
+                <HorizontalTeamCard
+                  image={team2}
+                  name={
+                    <a
+                      href="https://www.linkedin.com/in/attila-akac-354ba384/"
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      Attila Akac
+                    </a>
+                  }
+                  position={{ color: "info", label: "Research Associate" }}
+                  description={{
+                    color: "#004978",
+                    content: (
+                      <>
+                        <p>
+                          <span style={{ display: "flex", alignItems: "center" }}>
+                            <LinkedInIcon fontSize="small" style={{ marginLeft: "-2px" }} />
+                            <a
+                              href="https://www.linkedin.com/in/attila-akac-354ba384/"
+                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                            >
+                              LinkedIn
+                            </a>
+                          </span>
+                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                            <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                            <a
+                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                            >
+                              +30.211.0130489
+                            </a>
+                          </span>
+                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                            <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                            <a
+                              href="mailto:akac.attila@certh.gr"
+                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                            >
+                              akac.attila@certh.gr
+                            </a>
+                          </span>
+                        </p>
+                      </>
+                    ),
+                  }}
+                />
+              </MKBox>
+            </Grid>
+            <Grid item xs={12} lg={6}>
+              <MKBox mb={1}>
+                <HorizontalTeamCard
+                  image={team3}
+                  name={
+                    <a
+                      href="https://www.linkedin.com/in/ioanna-pappa-39550928/"
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      Ioanna Pappa
+                    </a>
+                  }
+                  position={{ color: "info", label: "Research Associate" }}
+                  description={{
+                    color: "#004978",
+                    content: (
+                      <>
+                        <p>
+                          <span style={{ display: "flex", alignItems: "center" }}>
+                            <LinkedInIcon fontSize="small" style={{ marginLeft: "-2px" }} />
+                            <a
+                              href="https://www.linkedin.com/in/ioanna-pappa-39550928/"
+                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                            >
+                              LinkedIn
+                            </a>
+                          </span>
+                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                            <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                            <a
+                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                            >
+                              +30.211.1069588
+                            </a>
+                          </span>
+                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                            <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                            <a
+                              href="mailto:ipappa@certh.gr"
+                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                            >
+                              ipappa@certh.gr
+                            </a>
+                          </span>
+                        </p>
+                      </>
+                    ),
+                  }}
+                />
+              </MKBox>
+            </Grid>
         </Grid>
       </Container>
     </MKBox>

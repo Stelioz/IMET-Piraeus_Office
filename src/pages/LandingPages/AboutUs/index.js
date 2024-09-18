@@ -21,16 +21,17 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import Navbar from "examples/Navbars/DefaultNavbar";
+import Footer from "examples/Footers/CenteredFooter";
 
 // About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
+// import Information from "pages/LandingPages/AboutUs/sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
+import TeamHead from "pages/LandingPages/AboutUs/sections/TeamHead";
+// import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes
@@ -38,83 +39,73 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/hit-image2.png";
+import logo from "assets/images/HITlogos/HITLogo.png";
 
 function AboutUs() {
   return (
     <>
-      <DefaultNavbar
+      <Navbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "default",
-        }}
-        transparent
-        light
+        // action={{
+        //   type: "external",
+        //   route: "https://www.creative-tim.com/product/material-kit-react",
+        //   label: "free download",
+        //   color: "info",
+        // }}
+        sticky
       />
       <MKBox
-        minHeight="75vh"
+        minHeight="55vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
+              rgba(gradients.dark.main, 0.8),
+              rgba(gradients.dark.state, 0.8)
             )}, url(${bgImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top",
           display: "grid",
           placeItems: "center",
         }}
       >
         <Container>
-          <Grid
-            container
-            item
-            xs={12}
-            lg={8}
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-            sx={{ mx: "auto", textAlign: "center" }}
-          >
+          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+            <MKBox
+              mb={7}
+              sx={{
+                backgroundImage: `url(${logo})`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                placeItems: "center",
+                height: "100px",
+                width: "100%",
+              }}
+            />
             <MKTypography
-              variant="h1"
+              variant="h2"
               color="white"
+              mt={-6}
+              mb={0}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
                 },
               })}
             >
-              Work with an amazing design
+              Hellenic Institute of Transport{" "}
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+            <MKTypography
+              variant="h2"
+              color="white"
+              textAlign="center"
+              px={{ xs: 12, lg: 7 }}
+              mt={0}
+            >
+              Piraeus Office
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton>
-            <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
-            </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography>
-            </MKBox>
           </Grid>
         </Container>
       </MKBox>
@@ -127,13 +118,31 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Information />
+        <Container>
+          <Grid container spacing={3} mt={2} mb={6}>
+            <Grid item ml={2} xs={12} sm={12} lg={12}>
+              <MKTypography variant="body1" fontWeight="light" color="black">
+                The Piraeus team consists of specialists with advanced degrees and extensive experience in
+                managing national and European research projects. Their expertise spans various areas such
+                as transport economics, operations research, energy and environment challenges in the
+                transport sector, digital transformation in shipping and logistics, sustainable urban
+                mobility and port operations. Team members have been involved in influential projects in
+                collaboration with leading industrial companies, public authorities and academic institutions,
+                helping to develop innovative solutions for Greece and beyond. This diverse team ensures that
+                the Piraeus office is at the forefront of transport innovation, addressing challenges such as
+                climate change, urbanization and technological advances in the maritime and logistics sectors. Their work consistently supports the development of more resilient, efficient and sustainable transportation systems, strengthening CERTH/HIT’s position as a key player in the European research landscape. 
+              </MKTypography>
+            </Grid>
+          </Grid>
+        </Container>
+        {/* <Information /> */}
+        <TeamHead />
         <Team />
-        <Featuring />
+        {/* <Featuring /> */}
         <Newsletter />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+        <Footer content={footerRoutes} />
       </MKBox>
     </>
   );

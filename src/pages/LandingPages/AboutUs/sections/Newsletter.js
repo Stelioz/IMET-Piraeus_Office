@@ -21,11 +21,11 @@ import Grid from "@mui/material/Grid";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
+// import MKInput from "components/MKInput";
+// import MKButton from "components/MKButton";
 
 // Images
-import macbook from "assets/images/macbook.png";
+import image from "assets/images/illustrations/hit-image1-raw.png";
 
 function Newsletter() {
   return (
@@ -33,12 +33,11 @@ function Newsletter() {
       <Container>
         <Grid container alignItems="center">
           <Grid item sx={12} md={6} sx={{ ml: { xs: 0, lg: 3 }, mb: { xs: 12, md: 0 } }}>
-            <MKTypography variant="h4">Be the first to see the news</MKTypography>
-            <MKTypography variant="body2" color="text" mb={3}>
-              Your company may not be in the software business, but eventually, a software company
-              will be in your business.
+            <MKTypography variant="h3">Our Motto</MKTypography>
+            <MKTypography variant="body1" color="text" mb={3}>
+              Driving Innovation for Sustainable Transport Solutions.
             </MKTypography>
-            <Grid container spacing={1}>
+            {/* <Grid container spacing={1}>
               <Grid item xs={8}>
                 <MKInput type="email" label="Email Here..." fullWidth />
               </Grid>
@@ -47,11 +46,11 @@ function Newsletter() {
                   Subscribe
                 </MKButton>
               </Grid>
-            </Grid>
+            </Grid> */}
           </Grid>
           <Grid item xs={12} md={5} sx={{ ml: "auto" }}>
             <MKBox position="relative">
-              <MKBox component="img" src={macbook} alt="macbook" width="100%" />
+              <MKBox component="img" src={image} alt="macbook" width="100%" />
             </MKBox>
           </Grid>
         </Grid>

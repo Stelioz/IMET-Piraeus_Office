@@ -46,7 +46,7 @@ import Icon from "@mui/material/Icon";
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
-import SignIn from "layouts/pages/authentication/sign-in";
+// import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
 // import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -72,39 +72,56 @@ const routes = [
   {
     name: "Projects",
     icon: <Icon>dashboard</Icon>,
-    columns: 1,
-    rowsPerColumn: 2,
+    // columns: 1,
+    // rowsPerColumn: 2,
     collapse: [
       {
-        name: "landing pages",
-        collapse: [
-          {
-            name: "about us",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
-          },
-          {
-            name: "contact us",
-            route: "/pages/landing-pages/contact-us",
-            component: <ContactUs />,
-          },
-          {
-            name: "author",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
-        ],
+        name: "about us",
+        route: "/pages/landing-pages/about-us",
+        component: <AboutUs />,
       },
       {
-        name: "account",
-        collapse: [
-          {
-            name: "sign in",
-            route: "/pages/authentication/sign-in",
-            component: <SignIn />,
-          },
-        ],
+        name: "contact us",
+        route: "/pages/landing-pages/contact-us",
+        component: <ContactUs />,
       },
+      {
+        name: "author",
+        route: "/pages/landing-pages/author",
+        component: <Author />,
+      },
+    ],
+  },
+  {
+    name: "Our Team",
+    icon: <Icon>people</Icon>,
+    route: "/pages/landing-pages/about-us",
+    component: <AboutUs />,
+  },
+  {
+    name: "About Us",
+    icon: <Icon>info</Icon>,
+    collapse: [
+      {
+        name: "Visit HIT",
+        description: "Hellenic Institute of Transport",
+        href: "https://www.imet.gr/index.php/en/",
+      },
+      {
+        name: "Visit CERTH",
+        description: "Center for Research and Technology Hellas",
+        href: "https://www.certh.gr/root.en.aspx",
+      },
+      // {
+      //   name: "components",
+      //   description: "Explore our collection of fully designed components",
+      //   href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+      // },
+      // {
+      //   name: "plugins",
+      //   description: "Check how you can integrate our plugins",
+      //   href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
+      // },
     ],
   },
   // {
@@ -238,38 +255,6 @@ const routes = [
   //     },
   //   ],
   // },
-  {
-    name: "Our Team",
-    icon: <Icon>people</Icon>,
-    route: "/pages/landing-pages/about-us",
-    component: <AboutUs />,
-  },
-  {
-    name: "Partners",
-    icon: <Icon>public</Icon>,
-    collapse: [
-      {
-        name: "Visit HIT",
-        description: "Hellenic Institute of Transport",
-        href: "https://www.imet.gr/index.php/en/",
-      },
-      {
-        name: "Visit CERTH",
-        description: "Center for Research and Technology Hellas",
-        href: "https://www.certh.gr/root.en.aspx",
-      },
-      // {
-      //   name: "components",
-      //   description: "Explore our collection of fully designed components",
-      //   href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-      // },
-      // {
-      //   name: "plugins",
-      //   description: "Check how you can integrate our plugins",
-      //   href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
-      // },
-    ],
-  },
   // {
   //   name: "Visit HIT",
   //   href: "https://www.imet.gr/index.php/en/",

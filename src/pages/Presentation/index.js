@@ -47,7 +47,7 @@ import footerRoutes from "footer.routes";
 import bgImage from "assets/images/hit-image1.png";
 import logo from "assets/images/HITlogos/HITLogo.png";
 
-function Presentation() {
+function home() {
   return (
     <>
       <Navbar
@@ -261,4 +261,4 @@ function Presentation() {
   );
 }
 
-export default Presentation;
+export default home;
