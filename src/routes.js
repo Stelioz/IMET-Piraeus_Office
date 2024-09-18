@@ -241,7 +241,8 @@ const routes = [
   {
     name: "Our Team",
     icon: <Icon>people</Icon>,
-    href: "https://www.imet.gr/index.php/en/",
+    route: "/pages/landing-pages/about-us",
+    component: <AboutUs />,
   },
   {
     name: "Partners",

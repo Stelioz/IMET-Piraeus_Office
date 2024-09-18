@@ -44,7 +44,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/hit-image1.png";
 import logo from "assets/images/HITlogos/HITLogo.png";
 
 function Presentation() {
@@ -61,7 +61,7 @@ function Presentation() {
         sticky
       />
       <MKBox
-        minHeight="50vh"
+        minHeight="55vh"
         width="100%"
         sx={{
           backgroundImage: ({ palette: { gradients }, functions: { rgba, linearGradient } }) =>
@@ -92,7 +92,7 @@ function Presentation() {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 placeItems: "center",
-                height: "110px",
+                height: "100px",
                 width: "100%",
               }}
             />
