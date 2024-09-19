@@ -14,133 +14,204 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+import Card from "@mui/material/Card";
+// import CardMedia from "@mui/material/CardMedia";
+import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
+// import MKInput from "components/MKInput";
+// import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import Navbar from "examples/Navbars/DefaultNavbar";
+import Footer from "examples/Footers/CenteredFooter";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
+// import footerRoutes from "footer.routes";
 
 // Image
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+// import post4 from "assets/images/airosimage2.png";
+import logo1 from "assets/images/airosimage2.png";
+import logo2 from "assets/images/airosimage2.png";
+import logo3 from "assets/images/airosimage2.png";
 
 function ContactUs() {
   return (
     <>
-      <MKBox position="fixed" top="0.5rem" width="100%">
-        <DefaultNavbar
-          routes={routes}
-          action={{
-            type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-react",
-            label: "free download",
-            color: "info",
+      <Navbar
+        routes={routes}
+        // action={{
+        //   type: "external",
+        //   route: "https://www.creative-tim.com/product/material-kit-react",
+        //   label: "free download",
+        //   color: "info",
+        // }}
+        sticky
+      />
+      <MKBox bgColor="white">
+        <MKBox
+          minHeight="25rem"
+          width="100%"
+          sx={{
+            backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+              `${linearGradient(
+                rgba(gradients.dark.main, 0.8),
+                rgba(gradients.dark.state, 0.8)
+              )}, url(${bgImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            display: "grid",
+            placeItems: "center",
           }}
-        />
-      </MKBox>
-      <Grid container spacing={3} alignItems="center">
-        <Grid item xs={12} lg={6}>
-          <MKBox
-            display={{ xs: "none", lg: "flex" }}
-            width="calc(100% - 2rem)"
-            height="calc(100vh - 2rem)"
-            borderRadius="lg"
-            ml={2}
-            mt={2}
-            sx={{ backgroundImage: `url(${bgImage})` }}
-          />
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={10}
-          md={7}
-          lg={6}
-          xl={4}
-          ml={{ xs: "auto", lg: 6 }}
-          mr={{ xs: "auto", lg: 6 }}
         >
-          <MKBox
-            bgColor="white"
-            borderRadius="xl"
-            shadow="lg"
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-            mt={{ xs: 20, sm: 18, md: 20 }}
-            mb={{ xs: 20, sm: 18, md: 20 }}
-            mx={3}
+          <MKTypography
+            variant="h1"
+            color="white"
+            textAlign="center"
+            mt={-2}
+            mb={1}
+            sx={({ breakpoints, typography: { size } }) => ({
+              [breakpoints.down("md")]: {
+                fontSize: size["3xl"],
+              },
+            })}
           >
-            <MKBox
-              variant="gradient"
-              bgColor="info"
-              coloredShadow="info"
-              borderRadius="lg"
-              p={2}
-              mx={2}
-              mt={-3}
-            >
-              <MKTypography variant="h3" color="white">
-                Contact us
+            SCOPE{""}
+          </MKTypography>
+        </MKBox>
+        <Card
+          sx={{
+            p: 2,
+            mx: { xs: 2, lg: 3 },
+            mt: -8,
+            mb: 4,
+            backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+            backdropFilter: "saturate(200%) blur(30px)",
+            boxShadow: ({ boxShadows: { xxl } }) => xxl,
+          }}
+        >
+
+          <MKBox component="section" py={3}>
+
+            <Container>
+              <MKTypography variant="h3" color="black" ml={3} mb={3}>
+                About the Project
               </MKTypography>
-            </MKBox>
-            <MKBox p={3}>
-              <MKTypography variant="body2" color="text" mb={3}>
-                For further questions, including partnership opportunities, please email
-                hello@creative-tim.com or contact using our contact form.
-              </MKTypography>
-              <MKBox width="100%" component="form" method="post" autoComplete="off">
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Full Name"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      type="email"
-                      variant="standard"
-                      label="Email"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MKInput
-                      variant="standard"
-                      label="What can we help you?"
-                      placeholder="Describe your problem in at least 250 characters"
-                      InputLabelProps={{ shrink: true }}
-                      multiline
-                      fullWidth
-                      rows={6}
-                    />
-                  </Grid>
+              <Container>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={2}>
+                  SCOPE aims to address existing inefficiencies (e.g. capacity utilization, fragmentation of
+                  activities, environmental sustainability) and improve the performance of the road freight
+                  transport system in the Balkan-Med region by providing a transnational, innovative and
+                  market-driven freight exchange platform. The SCOPE platform will build upon available knowledge
+                  and experience and will carefully consider local and transnational road freight transport
+                  conditions, providing value-added services meeting its users’ needs and requirements.
+                  The overall objective is to increase employment options and enhance regional competitiveness
+                  building upon available technological solutions for developing an innovative web-based platform
+                  that will facilitate shared road freight transport services efficiently connecting national and
+                  transnational shipper and carrier operations. Significant benefits will be provided to its users
+                  enhancing their territorial competitiveness and sustainability which, in turn, will contribute
+                  towards a more efficient business environment.
+                </MKTypography>
+              </Container>
+            </Container>
+
+            <Container>
+              <Grid container spacing={1}>
+                <Grid item xs={12} sm={6}>
+                  <Container>
+                    <MKTypography variant="h4" color="black" ml={0} mt={5} mb={2}>
+                      Specifications
+                    </MKTypography>
+
+                    <List>
+                      <ListItem>
+                        {/* <FontAwesomeIcon icon={icon({ name: 'fire' })} style={{ color: "#004978" }} /> */}
+                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "20px" }}>
+                          Fire Detection Using a Camera Device.
+                        </MKTypography>
+                      </ListItem>
+                      <ListItem>
+                        {/* <FontAwesomeIcon icon={icon({ name: 'satellite-dish' })} style={{ color: "#004978" }} /> */}
+                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "15px" }}>
+                          Multiple Sensors for Data Acquisition.
+                        </MKTypography>
+                      </ListItem>
+                      <ListItem>
+                        {/* <FontAwesomeIcon icon={icon({ name: 'tower-broadcast' })} style={{ color: "#004978" }} /> */}
+                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "12px" }}>
+                          Foldable Panel and Communication Antenna.
+                        </MKTypography>
+                      </ListItem>
+                      <ListItem>
+                        {/* <FontAwesomeIcon icon={icon({ name: 'solar-panel' })} style={{ color: "#004978" }} /> */}
+                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
+                          Solar Panel Charging.
+                        </MKTypography>
+                      </ListItem>
+                      <ListItem>
+                        {/* <FontAwesomeIcon icon={icon({ name: 'diagram-project' })} style={{ color: "#004978" }} /> */}
+                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
+                          Image and Data Telemetry System.
+                        </MKTypography>
+                      </ListItem>
+                    </List>
+                  </Container>
                 </Grid>
-                <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                  <MKButton type="submit" variant="gradient" color="info">
-                    Send Message
-                  </MKButton>
+
+                <Grid item xs={12} sm={6}>
+                  <Container>
+                    <MKTypography variant="h4" color="black" ml={0} mt={5} mb={2}>
+                      Programming Stack
+                    </MKTypography>
+
+                    <List>
+                      <ListItem>
+                        {/* <FontAwesomeIcon icon={icon({ name: 'microchip' })} style={{ color: "#004978" }} /> */}
+                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
+                          Arduino for Electronics and Control.
+                        </MKTypography>
+                      </ListItem>
+                      <ListItem>
+                        {/* <FontAwesomeIcon icon={icon({ name: 'eye' })} style={{ color: "#004978" }} /> */}
+                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
+                          Nvidia Jetson Nano for AI Fire Detection.
+                        </MKTypography>
+                      </ListItem>
+                      <ListItem>
+                        {/* <FontAwesomeIcon icon={icon({ name: 'code' })} style={{ color: "#004978" }} /> */}
+                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
+                          Python and C.
+                        </MKTypography>
+                      </ListItem>
+                      <ListItem>
+                        {/* <FontAwesomeIcon icon={icon({ name: 'desktop' })} style={{ color: "#004978" }} /> */}
+                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "12px" }}>
+                          Remote Control via a PC Program.
+                        </MKTypography>
+                      </ListItem>
+                    </List>
+
+                    <MKTypography variant="h4" color="black" ml={0} mt={5} mb={2}>
+                      Partners
+                    </MKTypography>
+                    <MKBox component="img" src={logo1} width="60px" sx={{ marginRight: '10px' }} />
+                    <MKBox component="img" src={logo2} width="70px" sx={{ marginRight: '10px' }} />
+                    <MKBox component="img" src={logo3} width="70px" sx={{ marginRight: '10px' }} />
+                  </Container>
                 </Grid>
-              </MKBox>
-            </MKBox>
+              </Grid>
+            </Container>
           </MKBox>
-        </Grid>
-      </Grid>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+        </Card>
+        {/* <Contact /> */}
+        <Footer />
       </MKBox>
     </>
   );
