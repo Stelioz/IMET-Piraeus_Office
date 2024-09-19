@@ -87,7 +87,6 @@ function TeamHead() {
                         <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                           <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
                           <a
-                            href="mailto:a.anagnostopoulou@certh.gr"
                             style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                           >
                             a.anagnostopoulou@certh.gr

@@ -90,7 +90,6 @@ function Team() {
                           <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                             <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
                             <a
-                              href="mailto:xkitsios@certh.gr"
                               style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                             >
                               xkitsios@certh.gr
@@ -141,7 +140,6 @@ function Team() {
                           <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                             <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
                             <a
-                              href="mailto:akac.attila@certh.gr"
                               style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                             >
                               akac.attila@certh.gr
@@ -192,7 +190,6 @@ function Team() {
                           <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                             <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
                             <a
-                              href="mailto:ipappa@certh.gr"
                               style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                             >
                               ipappa@certh.gr

@@ -20,33 +20,33 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+import Navbar from "examples/Navbars/DefaultNavbar";
+import Footer from "examples/Footers/CenteredFooter";
 
 // Author page sections
-import Profile from "pages/LandingPages/Author/sections/Profile";
-import Posts from "pages/LandingPages/Author/sections/Posts";
-import Contact from "pages/LandingPages/Author/sections/Contact";
-import Footer from "pages/LandingPages/Author/sections/Footer";
+import Profile from "pages/LandingPages/Author/sections/Profile1";
+// import Posts from "pages/LandingPages/Author/sections/Posts";
+// import Contact from "pages/LandingPages/Author/sections/Contact";
+// import Footer from "pages/LandingPages/Author/sections/Footer";
 
 // Routes
 import routes from "routes";
 
 // Images
-import bgImage from "assets/images/city-profile.jpg";
+import bgImage from "assets/images/hit-image3.png";
 
 function Author() {
   return (
     <>
-      <DefaultNavbar
+      <Navbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
-        transparent
-        light
+        // action={{
+        //   type: "external",
+        //   route: "https://www.creative-tim.com/product/material-kit-react",
+        //   label: "free download",
+        //   color: "info",
+        // }}
+        sticky
       />
       <MKBox bgColor="white">
         <MKBox
@@ -59,7 +59,7 @@ function Author() {
                 rgba(gradients.dark.state, 0.8)
               )}, url(${bgImage})`,
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "bottom",
             display: "grid",
             placeItems: "center",
           }}
@@ -76,9 +76,9 @@ function Author() {
           }}
         >
           <Profile />
-          <Posts />
+          {/* <Posts /> */}
         </Card>
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </MKBox>
     </>
