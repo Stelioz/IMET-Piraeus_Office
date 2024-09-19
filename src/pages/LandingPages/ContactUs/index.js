@@ -36,11 +36,11 @@ import routes from "routes";
 // import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import bgImage from "assets/images/projects/scopeBG.jpg";
 // import post4 from "assets/images/airosimage2.png";
-import logo1 from "assets/images/airosimage2.png";
-import logo2 from "assets/images/airosimage2.png";
-import logo3 from "assets/images/airosimage2.png";
+import logo1 from "assets/images/projects/scope.png";
+// import logo2 from "assets/images/airosimage2.png";
+// import logo3 from "assets/images/airosimage2.png";
 
 function ContactUs() {
   return (
@@ -100,12 +100,81 @@ function ContactUs() {
 
           <MKBox component="section" py={3}>
 
+            <Container sx={{ mt: 2, mb: 5 }}>
+              <Grid container spacing={1} alignItems="center">
+                <Grid item xs={12} sm={8}>
+                  <Container>
+                    {/* <MKTypography variant="h4" color="black" ml={0} mt={3} mb={1}>
+                      Details
+                    </MKTypography> */}
+                    <List>
+                      <ListItem>
+                        <MKBox ml={0} mt={0} mb={0}>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="bold">
+                            Acronym:
+                          </MKTypography>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="light">
+                            {" "}SCOPE
+                          </MKTypography>
+                        </MKBox>
+                      </ListItem>
+                      <ListItem>
+                        <MKBox ml={0} mt={0} mb={0}>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="bold">
+                            Project Title:
+                          </MKTypography>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="light">
+                            {" "}Shared freight transport services connecting shipper and carrier operations
+                          </MKTypography>
+                        </MKBox>
+                      </ListItem>
+                      <ListItem>
+                        <MKBox ml={0} mt={0} mb={0}>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="bold">
+                            Duration:
+                          </MKTypography>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="light">
+                            {" "}34 months (09/09/2019 - 08/07/2022)
+                          </MKTypography>
+                        </MKBox>
+                      </ListItem>
+                      <ListItem>
+                        <MKBox ml={0} mt={0} mb={0}>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="bold">
+                            Role:
+                          </MKTypography>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="light">
+                            {" "}Lead Partner
+                          </MKTypography>
+                        </MKBox>
+                      </ListItem>
+                      <ListItem>
+                        <MKBox ml={0} mt={0} mb={0}>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="bold">
+                            Programme:
+                          </MKTypography>
+                          <MKTypography variant="body1" component="span" color="black" fontWeight="light">
+                            {" "}Interreg Balkan Mediterranean
+                          </MKTypography>
+                        </MKBox>
+                      </ListItem>
+                    </List>
+                  </Container>
+                </Grid>
+
+                <Grid item xs={12} sm={4}>
+                  <Container>
+                    <MKBox component="img" src={logo1} width="90%" sx={{ marginRight: '10px' }} />
+                  </Container>
+                </Grid>
+              </Grid>
+            </Container>
             <Container>
-              <MKTypography variant="h3" color="black" ml={3} mb={3}>
-                About the Project
+              <MKTypography variant="h5" color="black" ml={3} mb={1}>
+                Description
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={2}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={5}>
                   SCOPE aims to address existing inefficiencies (e.g. capacity utilization, fragmentation of
                   activities, environmental sustainability) and improve the performance of the road freight
                   transport system in the Balkan-Med region by providing a transnational, innovative and
@@ -121,92 +190,35 @@ function ContactUs() {
                 </MKTypography>
               </Container>
             </Container>
-
             <Container>
-              <Grid container spacing={1}>
-                <Grid item xs={12} sm={6}>
-                  <Container>
-                    <MKTypography variant="h4" color="black" ml={0} mt={5} mb={2}>
-                      Specifications
-                    </MKTypography>
-
-                    <List>
-                      <ListItem>
-                        {/* <FontAwesomeIcon icon={icon({ name: 'fire' })} style={{ color: "#004978" }} /> */}
-                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "20px" }}>
-                          Fire Detection Using a Camera Device.
-                        </MKTypography>
-                      </ListItem>
-                      <ListItem>
-                        {/* <FontAwesomeIcon icon={icon({ name: 'satellite-dish' })} style={{ color: "#004978" }} /> */}
-                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "15px" }}>
-                          Multiple Sensors for Data Acquisition.
-                        </MKTypography>
-                      </ListItem>
-                      <ListItem>
-                        {/* <FontAwesomeIcon icon={icon({ name: 'tower-broadcast' })} style={{ color: "#004978" }} /> */}
-                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "12px" }}>
-                          Foldable Panel and Communication Antenna.
-                        </MKTypography>
-                      </ListItem>
-                      <ListItem>
-                        {/* <FontAwesomeIcon icon={icon({ name: 'solar-panel' })} style={{ color: "#004978" }} /> */}
-                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
-                          Solar Panel Charging.
-                        </MKTypography>
-                      </ListItem>
-                      <ListItem>
-                        {/* <FontAwesomeIcon icon={icon({ name: 'diagram-project' })} style={{ color: "#004978" }} /> */}
-                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
-                          Image and Data Telemetry System.
-                        </MKTypography>
-                      </ListItem>
-                    </List>
-                  </Container>
-                </Grid>
-
-                <Grid item xs={12} sm={6}>
-                  <Container>
-                    <MKTypography variant="h4" color="black" ml={0} mt={5} mb={2}>
-                      Programming Stack
-                    </MKTypography>
-
-                    <List>
-                      <ListItem>
-                        {/* <FontAwesomeIcon icon={icon({ name: 'microchip' })} style={{ color: "#004978" }} /> */}
-                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
-                          Arduino for Electronics and Control.
-                        </MKTypography>
-                      </ListItem>
-                      <ListItem>
-                        {/* <FontAwesomeIcon icon={icon({ name: 'eye' })} style={{ color: "#004978" }} /> */}
-                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
-                          Nvidia Jetson Nano for AI Fire Detection.
-                        </MKTypography>
-                      </ListItem>
-                      <ListItem>
-                        {/* <FontAwesomeIcon icon={icon({ name: 'code' })} style={{ color: "#004978" }} /> */}
-                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "10px" }}>
-                          Python and C.
-                        </MKTypography>
-                      </ListItem>
-                      <ListItem>
-                        {/* <FontAwesomeIcon icon={icon({ name: 'desktop' })} style={{ color: "#004978" }} /> */}
-                        <MKTypography variant="body1" color="black" sx={{ marginLeft: "12px" }}>
-                          Remote Control via a PC Program.
-                        </MKTypography>
-                      </ListItem>
-                    </List>
-
-                    <MKTypography variant="h4" color="black" ml={0} mt={5} mb={2}>
-                      Partners
-                    </MKTypography>
-                    <MKBox component="img" src={logo1} width="60px" sx={{ marginRight: '10px' }} />
-                    <MKBox component="img" src={logo2} width="70px" sx={{ marginRight: '10px' }} />
-                    <MKBox component="img" src={logo3} width="70px" sx={{ marginRight: '10px' }} />
-                  </Container>
-                </Grid>
-              </Grid>
+              <MKTypography variant="h5" color="black" ml={3} mb={1}>
+                Objectives
+              </MKTypography>
+              <Container>
+                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
+                  <ul>
+                    <li>SCOPE project aims to address existing inefficiencies and improve the performance of the road freight transport system in the Balkan-Med region by providing a transnational, innovative and market-driven freight exchange platform.</li>
+                    <li>The proposed platform will be built upon the continuous engagement of industry stakeholders with prospective users and upon careful consideration on users’ needs and requirements.</li>
+                    <li>The SCOPE platform will satisfy potential users’ recommendations through a tailored online booking system to facilitate freight exchanges between dully-certified users and offer advanced services, such as operating cost estimation, routing applications, cargo monitoring, truck driver simulator etc.</li>
+                  </ul>
+                </MKTypography>
+              </Container>
+              <Container>
+                <MKBox display="flex" justifyContent="center" alignItems="center" py={3}>
+                  <MKTypography variant="body1" component="span" color="black" fontWeight="bold">
+                    For further information, please visit the{" "}
+                    <a
+                      href="https://scope-app.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#4A90E2", textDecoration: "underline" }}
+                    >
+                      SCOPE
+                    </a>{" "}
+                    website.
+                  </MKTypography>
+                </MKBox>
+              </Container>
             </Container>
           </MKBox>
         </Card>

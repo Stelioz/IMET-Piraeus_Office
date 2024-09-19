@@ -87,8 +87,8 @@ function Profile() {
                 </Grid> */}
               </Grid>
               <MKTypography variant="body1" fontWeight="light" color="text">
-                Dr. Afroditi Anagnostopoulou is a Researcher Director at the Hellenic Institute (HIT) of
-                Transport / Centre for Research and Technology Hellas (CERTH), experienced in project
+                Dr. Afroditi Anagnostopoulou is a Research Director at the Hellenic Institute of
+                Transport (HIT) / Centre for Research and Technology Hellas (CERTH), experienced in project
                 management and transport economics overseeing the “Economic and Social Impacts of
                 Transport Systems” laboratory. She is also Deputy of Unit on Transport Economics and
                 Environment, Maritime and Air Transport in the HIT. Her research interest lies in the
