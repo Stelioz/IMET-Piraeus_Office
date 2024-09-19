@@ -25,7 +25,7 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-import profilePicture from "assets/images/team-2.jpg";
+import profilePicture from "assets/images/attila.jpg";
 import PhoneIcon from "@mui/icons-material/Phone";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
@@ -73,7 +73,7 @@ function Profile() {
               <MKTypography variant="body1" fontWeight="light" color="text">
                 Attila Akac was born in the city of Pecs, Hungary. He has been working as a Research
                 Associate at the Hellenic Institute of Transport / Centre for Research and Technology
-                Hellas since 2018 with the specialization of "Energy & Production Engineer", performing
+                Hellas since 2018 with the specialization of &quot;Energy & Production Engineer&quot;, performing
                 multiple tasks in European, Regional and National projects of the Energy, Economic and
                 Environmental Issues - Maritime and Air Transport Division of the Institute. <br /> <br />
                 He is a graduate of the School of Production Engineering and Management of the

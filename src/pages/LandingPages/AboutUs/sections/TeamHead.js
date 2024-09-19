@@ -28,7 +28,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 
 // Images
-import team1 from "assets/images/team-5.jpg";
+import team1 from "assets/images/anag.jpg";
 
 function TeamHead() {
   return (

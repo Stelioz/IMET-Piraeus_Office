@@ -141,7 +141,7 @@ function AboutUs() {
         {/* <Featuring /> */}
         <Newsletter />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
+      <MKBox pt={0} px={0} mt={0}>
         <Footer content={footerRoutes} />
       </MKBox>
     </>

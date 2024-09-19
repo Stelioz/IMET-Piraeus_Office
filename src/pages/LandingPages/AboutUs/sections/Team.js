@@ -29,9 +29,9 @@ import MailIcon from "@mui/icons-material/Mail";
 
 
 // Images
-import team1 from "assets/images/team-2.jpg";
-import team2 from "assets/images/bruce-mars.jpg";
-import team3 from "assets/images/ivana-squares.jpg";
+import team1 from "assets/images/xenof.jpg";
+import team2 from "assets/images/attila.jpg";
+import team3 from "assets/images/pappa.jpg";
 
 function Team() {
   return (
@@ -53,155 +53,155 @@ function Team() {
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
-              <MKBox mb={1}>
-                <HorizontalTeamCard
-                  image={team1}
-                  name={
-                    <a
-                      href="https://www.linkedin.com/in/xkitsios/"
-                      style={{ color: "inherit", textDecoration: "none" }}
-                    >
-                      Xenofon Kitsios
-                    </a>
-                  }
-                  position={{ color: "info", label: "Developer" }}
-                  description={{
-                    color: "#004978",
-                    content: (
-                      <>
-                        <p>
-                          <span style={{ display: "flex", alignItems: "center" }}>
-                            <LinkedInIcon fontSize="small" style={{ marginLeft: "-2px" }} />
-                            <a
-                              href="https://www.linkedin.com/in/xkitsios/"
-                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
-                            >
-                              LinkedIn
-                            </a>
-                          </span>
-                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
-                            <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                            <a
-                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
-                            >
-                              +30.211.0130490
-                            </a>
-                          </span>
-                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
-                            <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                            <a
-                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
-                            >
-                              xkitsios@certh.gr
-                            </a>
-                          </span>
-                        </p>
-                      </>
-                    ),
-                  }}
-                />
-              </MKBox>
-            </Grid>
-            <Grid item xs={12} lg={6}>
-              <MKBox mb={1}>
-                <HorizontalTeamCard
-                  image={team2}
-                  name={
-                    <a
-                      href="https://www.linkedin.com/in/attila-akac-354ba384/"
-                      style={{ color: "inherit", textDecoration: "none" }}
-                    >
-                      Attila Akac
-                    </a>
-                  }
-                  position={{ color: "info", label: "Research Associate" }}
-                  description={{
-                    color: "#004978",
-                    content: (
-                      <>
-                        <p>
-                          <span style={{ display: "flex", alignItems: "center" }}>
-                            <LinkedInIcon fontSize="small" style={{ marginLeft: "-2px" }} />
-                            <a
-                              href="https://www.linkedin.com/in/attila-akac-354ba384/"
-                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
-                            >
-                              LinkedIn
-                            </a>
-                          </span>
-                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
-                            <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                            <a
-                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
-                            >
-                              +30.211.0130489
-                            </a>
-                          </span>
-                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
-                            <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                            <a
-                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
-                            >
-                              akac.attila@certh.gr
-                            </a>
-                          </span>
-                        </p>
-                      </>
-                    ),
-                  }}
-                />
-              </MKBox>
-            </Grid>
-            <Grid item xs={12} lg={6}>
-              <MKBox mb={1}>
-                <HorizontalTeamCard
-                  image={team3}
-                  name={
-                    <a
-                      href="https://www.linkedin.com/in/ioanna-pappa-39550928/"
-                      style={{ color: "inherit", textDecoration: "none" }}
-                    >
-                      Ioanna Pappa
-                    </a>
-                  }
-                  position={{ color: "info", label: "Research Associate" }}
-                  description={{
-                    color: "#004978",
-                    content: (
-                      <>
-                        <p>
-                          <span style={{ display: "flex", alignItems: "center" }}>
-                            <LinkedInIcon fontSize="small" style={{ marginLeft: "-2px" }} />
-                            <a
-                              href="https://www.linkedin.com/in/ioanna-pappa-39550928/"
-                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
-                            >
-                              LinkedIn
-                            </a>
-                          </span>
-                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
-                            <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                            <a
-                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
-                            >
-                              +30.211.1069588
-                            </a>
-                          </span>
-                          <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
-                            <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                            <a
-                              style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
-                            >
-                              ipappa@certh.gr
-                            </a>
-                          </span>
-                        </p>
-                      </>
-                    ),
-                  }}
-                />
-              </MKBox>
-            </Grid>
+            <MKBox mb={1}>
+              <HorizontalTeamCard
+                image={team2}
+                name={
+                  <a
+                    href="https://www.linkedin.com/in/attila-akac-354ba384/"
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
+                    Attila Akac
+                  </a>
+                }
+                position={{ color: "info", label: "Research Associate" }}
+                description={{
+                  color: "#004978",
+                  content: (
+                    <>
+                      <p>
+                        <span style={{ display: "flex", alignItems: "center" }}>
+                          <LinkedInIcon fontSize="small" style={{ marginLeft: "-2px" }} />
+                          <a
+                            href="https://www.linkedin.com/in/attila-akac-354ba384/"
+                            style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                          >
+                            LinkedIn
+                          </a>
+                        </span>
+                        <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                          <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                          <a
+                            style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                          >
+                            +30.211.0130489
+                          </a>
+                        </span>
+                        <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                          <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                          <a
+                            style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                          >
+                            akac.attila@certh.gr
+                          </a>
+                        </span>
+                      </p>
+                    </>
+                  ),
+                }}
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={1}>
+              <HorizontalTeamCard
+                image={team1}
+                name={
+                  <a
+                    href="https://www.linkedin.com/in/xkitsios/"
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
+                    Xenofon Kitsios
+                  </a>
+                }
+                position={{ color: "info", label: "Research Associate" }}
+                description={{
+                  color: "#004978",
+                  content: (
+                    <>
+                      <p>
+                        <span style={{ display: "flex", alignItems: "center" }}>
+                          <LinkedInIcon fontSize="small" style={{ marginLeft: "-2px" }} />
+                          <a
+                            href="https://www.linkedin.com/in/xkitsios/"
+                            style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                          >
+                            LinkedIn
+                          </a>
+                        </span>
+                        <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                          <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                          <a
+                            style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                          >
+                            +30.211.0130490
+                          </a>
+                        </span>
+                        <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                          <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                          <a
+                            style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                          >
+                            xkitsios@certh.gr
+                          </a>
+                        </span>
+                      </p>
+                    </>
+                  ),
+                }}
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={1}>
+              <HorizontalTeamCard
+                image={team3}
+                name={
+                  <a
+                    href="https://www.linkedin.com/in/ioanna-pappa-39550928/"
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
+                    Ioanna Pappa
+                  </a>
+                }
+                position={{ color: "info", label: "Research Associate" }}
+                description={{
+                  color: "#004978",
+                  content: (
+                    <>
+                      <p>
+                        <span style={{ display: "flex", alignItems: "center" }}>
+                          <LinkedInIcon fontSize="small" style={{ marginLeft: "-2px" }} />
+                          <a
+                            href="https://www.linkedin.com/in/ioanna-pappa-39550928/"
+                            style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                          >
+                            LinkedIn
+                          </a>
+                        </span>
+                        <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                          <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                          <a
+                            style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                          >
+                            +30.211.1069588
+                          </a>
+                        </span>
+                        <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                          <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                          <a
+                            style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                          >
+                            ipappa@certh.gr
+                          </a>
+                        </span>
+                      </p>
+                    </>
+                  ),
+                }}
+              />
+            </MKBox>
+          </Grid>
         </Grid>
       </Container>
     </MKBox>
