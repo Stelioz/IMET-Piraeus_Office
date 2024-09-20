@@ -47,6 +47,12 @@ import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 // import SignIn from "layouts/pages/authentication/sign-in";
+import Am4Infra from "layouts/pages/projects-pages/am4infra-page";
+import BeOpen from "layouts/pages/projects-pages/beopen-page";
+import Impacts from "layouts/pages/projects-pages/impacts-page";
+import OptiShip from "layouts/pages/projects-pages/optiship-page";
+import Scilake from "layouts/pages/projects-pages/scilake-page";
+import Scope from "layouts/pages/projects-pages/scope-page";
 
 // Sections
 // import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -84,6 +90,36 @@ const routes = [
         name: "contact us",
         route: "/pages/landing-pages/contact-us",
         component: <ContactUs />,
+      },
+      {
+        name: "AM4INFRA",
+        route: "/projects/am4infra",
+        component: <Am4Infra />,
+      },
+      {
+        name: "BEOPEN",
+        route: "/projects/beopen",
+        component: <BeOpen />,
+      },
+      {
+        name: "Impacts",
+        route: "/projects/impacts",
+        component: <Impacts />,
+      },
+      {
+        name: "OptiShip",
+        route: "/projects/optiShip",
+        component: <OptiShip />,
+      },
+      {
+        name: "Scilake",
+        route: "/projects/scilake",
+        component: <Scilake />,
+      },
+      {
+        name: "Scope",
+        route: "/projects/scope",
+        component: <Scope />,
       },
       {
         name: "author",
