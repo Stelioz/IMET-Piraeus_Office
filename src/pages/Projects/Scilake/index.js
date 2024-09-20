@@ -36,13 +36,13 @@ import routes from "routes";
 // import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/projects/scopeBG.jpg";
+import bgImage from "assets/images/projects/scilakeBG.png";
 // import post4 from "assets/images/airosimage2.png";
-import logo1 from "assets/images/projects/scope.png";
+import logo1 from "assets/images/projects/scilake.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
 
-function ContactUs() {
+function Scilake() {
   return (
     <>
       <Navbar
@@ -114,7 +114,7 @@ function ContactUs() {
                             Acronym:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}SCOPE
+                            {" "}SCILAKE
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -124,7 +124,7 @@ function ContactUs() {
                             Project Title:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}Shared freight transport services connecting shipper and carrier operations
+                            {" "}Democratising and making sense out of heterogeneous scholarly content
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -134,7 +134,7 @@ function ContactUs() {
                             Duration:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}34 months (09/09/2019 - 08/07/2022)
+                            {" "}36 months (01/01/2023 - 31/12/2025)
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -144,7 +144,7 @@ function ContactUs() {
                             Role:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}Lead Partner
+                            {" "}Partner
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -154,7 +154,7 @@ function ContactUs() {
                             Programme:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}Interreg Balkan Mediterranean
+                            {" "}Horizon Europe
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -175,18 +175,27 @@ function ContactUs() {
               </MKTypography>
               <Container>
                 <MKTypography variant="body1" fontWeight="light" color="black" mb={5}>
-                  SCOPE aims to address existing inefficiencies (e.g. capacity utilization, fragmentation of
-                  activities, environmental sustainability) and improve the performance of the road freight
-                  transport system in the Balkan-Med region by providing a transnational, innovative and
-                  market-driven freight exchange platform. The SCOPE platform will build upon available knowledge
-                  and experience and will carefully consider local and transnational road freight transport
-                  conditions, providing value-added services meeting its users’ needs and requirements.
-                  The overall objective is to increase employment options and enhance regional competitiveness
-                  building upon available technological solutions for developing an innovative web-based platform
-                  that will facilitate shared road freight transport services efficiently connecting national and
-                  transnational shipper and carrier operations. Significant benefits will be provided to its users
-                  enhancing their territorial competitiveness and sustainability which, in turn, will contribute
-                  towards a more efficient business environment.
+                  SciLake&apos;s mission is to build upon the OpenAIRE ecosystem and EOSC services to (a) facilitate
+                  and empower the creation, interlinking and maintenance of Scientific/Scholarly Knowledge Graphs
+                  (SKGs) and the execution of data science and graph mining queries on top of them, (b) contribute
+                  to the democratization of scholarly content and the related added value services implementing a
+                  community-driven management approach, and (c) offer advanced, AI-assisted services that exploit
+                  customised perspectives of scientific merit to assist the navigation of the vast scientific
+                  knowledge space. In brief, SciLake will develop, support, and offer customisable services to the
+                  research community following a two-tier service architecture. First, it will offer a comprehensive,
+                  open, transparent, and customizable scientific data-lake-as-a-service (service tier 1), empowering
+                  and facilitating the creation, interlinking, and maintenance of SKGs both across and within different
+                  scientific disciplines. On top of that, it will build and offer a tier of customisable, AI-assisted
+                  services that facilitate the navigation of scholarly content following a scientific merit-driven
+                  approach (tier 2), focusing on two merit aspects which are crucial for the research community at
+                  large: impact and reproducibility. The services in both tiers will leverage advanced AI techniques
+                  (text and graph mining) that are going to exploit and extend existing technologies provided by
+                  SciLake&apos;s technology partners. Finally, to showcase the value of the provided services and their
+                  capability to address current and anticipated needs of different research communities, four
+                  scientific domains (neuroscience, cancer research, transportation, and energy) have been selected
+                  to serve as pilots. For each, the developed services will be customised, to accommodate differences
+                  in research procedures, practices, impact measures and types of research objects, and will be validated
+                  and evaluated through real-world use cases.
                 </MKTypography>
               </Container>
             </Container>
@@ -195,11 +204,20 @@ function ContactUs() {
                 Objectives
               </MKTypography>
               <Container>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
+                  SciLake builds upon the OpenAIRE ecosystem and EOSC services to enable creation, interlinking, and maintenance
+                  of Science Knowledge Graphs (SKGs) and execution of data science and graph mining queries on top of them unlock
+                  the vast scientific knowledge space with advanced, AI-based services that exploit customized perspectives.
+                  More specifically:
+                </MKTypography>
                 <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
                   <ul>
-                    <li>SCOPE project aims to address existing inefficiencies and improve the performance of the road freight transport system in the Balkan-Med region by providing a transnational, innovative and market-driven freight exchange platform.</li>
-                    <li>The proposed platform will be built upon the continuous engagement of industry stakeholders with prospective users and upon careful consideration on users’ needs and requirements.</li>
-                    <li>The SCOPE platform will satisfy potential users’ recommendations through a tailored online booking system to facilitate freight exchanges between dully-certified users and offer advanced services, such as operating cost estimation, routing applications, cargo monitoring, truck driver simulator etc.</li>
+                    <li>Identify and address domain-specific cross-disciplinary information needs while managing heterogeneous scholarly content.</li>
+                    <li>Democratize scholarly content by facilitating, interlinking, and managing of community-based SKGs.</li>
+                    <li>Identify research trends and valuable research objects.</li>
+                    <li>Assess research reproducibility and replicability/repeatability.</li>
+                    <li>Customise, test, and demonstrate developed services in real-world scenarios.</li>
+                    <li>Leverage & enrich EOSC services.</li>
                   </ul>
                 </MKTypography>
               </Container>
@@ -208,12 +226,12 @@ function ContactUs() {
                   <MKTypography variant="body1" component="span" color="black" fontWeight="bold">
                     For further information, please visit the{" "}
                     <a
-                      href="https://scope-app.net/"
+                      href="https://scilake.eu/"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: "#4A90E2", textDecoration: "underline" }}
                     >
-                      SCOPE
+                      SCILAKE
                     </a>{" "}
                     website.
                   </MKTypography>
@@ -229,4 +247,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default Scilake;

@@ -36,13 +36,13 @@ import routes from "routes";
 // import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/projects/scopeBG.jpg";
+import bgImage from "assets/images/projects/am4infraBG.jpg";
 // import post4 from "assets/images/airosimage2.png";
-import logo1 from "assets/images/projects/scope.png";
+import logo1 from "assets/images/projects/am4infra.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
 
-function ContactUs() {
+function am4infra() {
   return (
     <>
       <Navbar
@@ -66,7 +66,7 @@ function ContactUs() {
                 rgba(gradients.dark.state, 0.8)
               )}, url(${bgImage})`,
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "bottom",
             display: "grid",
             placeItems: "center",
           }}
@@ -114,7 +114,7 @@ function ContactUs() {
                             Acronym:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}SCOPE
+                            {" "}AM4INFRA
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -124,7 +124,7 @@ function ContactUs() {
                             Project Title:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}Shared freight transport services connecting shipper and carrier operations
+                            {" "}Common Framework for a European Life Cycle based Asset Management Approach for transport infrastructure networks
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -134,7 +134,7 @@ function ContactUs() {
                             Duration:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}34 months (09/09/2019 - 08/07/2022)
+                            {" "}24 months (1/9/2016 - 31/8/2018)
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -144,7 +144,7 @@ function ContactUs() {
                             Role:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}Lead Partner
+                            {" "}Partner
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -154,7 +154,7 @@ function ContactUs() {
                             Programme:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}Interreg Balkan Mediterranean
+                            {" "}H2020
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -164,7 +164,7 @@ function ContactUs() {
 
                 <Grid item xs={12} sm={4}>
                   <Container>
-                    <MKBox component="img" src={logo1} width="90%" sx={{ marginRight: '10px' }} />
+                    <MKBox component="img" src={logo1} width="70%" sx={{ marginRight: '10px' }} />
                   </Container>
                 </Grid>
               </Grid>
@@ -175,18 +175,24 @@ function ContactUs() {
               </MKTypography>
               <Container>
                 <MKTypography variant="body1" fontWeight="light" color="black" mb={5}>
-                  SCOPE aims to address existing inefficiencies (e.g. capacity utilization, fragmentation of
-                  activities, environmental sustainability) and improve the performance of the road freight
-                  transport system in the Balkan-Med region by providing a transnational, innovative and
-                  market-driven freight exchange platform. The SCOPE platform will build upon available knowledge
-                  and experience and will carefully consider local and transnational road freight transport
-                  conditions, providing value-added services meeting its users’ needs and requirements.
-                  The overall objective is to increase employment options and enhance regional competitiveness
-                  building upon available technological solutions for developing an innovative web-based platform
-                  that will facilitate shared road freight transport services efficiently connecting national and
-                  transnational shipper and carrier operations. Significant benefits will be provided to its users
-                  enhancing their territorial competitiveness and sustainability which, in turn, will contribute
-                  towards a more efficient business environment.
+                  AM4INFRA project is a coordination and support action (CSA) funded by the H2020 programme with
+                  the aim to enable transparent, risk-based optimization of investments within and across the modes.
+                  The overall objective of this CSA is to launch a life cycle and risk based Asset Management (AM)
+                  framework approach enabling effective governance of transport infrastructure networks across Europe.
+                  The framework approach is supported by data management tools that ensure transparency and compatibility
+                  of optimization and collaboration actions of the infrastructure authorities within the modes, across the
+                  modes and across Europe. This common framework paves the way towards an integrated agenda such that it
+                  allows smooth functioning of the European transport networks, providing outstanding value for stakeholders
+                  and customers. The project’s scope is to support the infrastructure authorities in their decision making and
+                  planning as identifying the priorities on basis of (remaining) cost-performance and service levels. AM4INFRA
+                  aims to innovate the decision making by the authorities to the extent that the hinder on traffic is optimized
+                  on the basis of transparent, coherent and consistent considerations that can be better communicated to society.
+                  In addition, the innovations provided by AM4INFRA can offer new knowledge and represent the ‘seed corn’ for an
+                  implementation agenda through which the effectiveness of the sector can be further enhanced. Building on ongoing
+                  bottom-up actions, best practices and contemporary experiences of four National Infrastructure Agencies (NIAs)
+                  that are considered frontrunners in the development and application of asset management in their networks
+                  governance, it will deliver the first ever common European AM framework approach that enables consistent and
+                  coherent cross-asset, cross-modal and cross-border decision making.
                 </MKTypography>
               </Container>
             </Container>
@@ -195,11 +201,16 @@ function ContactUs() {
                 Objectives
               </MKTypography>
               <Container>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
+                  The main objectives of AM4INFRA are
+                </MKTypography>
                 <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
                   <ul>
-                    <li>SCOPE project aims to address existing inefficiencies and improve the performance of the road freight transport system in the Balkan-Med region by providing a transnational, innovative and market-driven freight exchange platform.</li>
-                    <li>The proposed platform will be built upon the continuous engagement of industry stakeholders with prospective users and upon careful consideration on users’ needs and requirements.</li>
-                    <li>The SCOPE platform will satisfy potential users’ recommendations through a tailored online booking system to facilitate freight exchanges between dully-certified users and offer advanced services, such as operating cost estimation, routing applications, cargo monitoring, truck driver simulator etc.</li>
+                    <li>To provide NIAs with insight on how AM practices would support the development of network management strategy, adoption of decision making processes, operational requirements and how asset knowledge can be utilized.</li>
+                    <li>To provide NIAs with a common, practical framework for a life cycle and risk based AM approach capable of governance on the highest aggregation level of (cross-modal) network considerations.</li>
+                    <li>To enable NIAs in acquiring meaningful data, sharing knowledge and good practices to achieve “learning by doing” and continuous improvement of the operations.</li>
+                    <li>To connect NIAs of different transport modes in terms of AM systems, methodologies and practices (multi-modal management).</li>
+                    <li>To provide NIAs the means for replication and wider roll-out of the developed solutions.</li>
                   </ul>
                 </MKTypography>
               </Container>
@@ -208,12 +219,12 @@ function ContactUs() {
                   <MKTypography variant="body1" component="span" color="black" fontWeight="bold">
                     For further information, please visit the{" "}
                     <a
-                      href="https://scope-app.net/"
+                      href="https://am4infra.eu/"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: "#4A90E2", textDecoration: "underline" }}
                     >
-                      SCOPE
+                      AM4INFRA
                     </a>{" "}
                     website.
                   </MKTypography>
@@ -229,4 +240,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default am4infra;

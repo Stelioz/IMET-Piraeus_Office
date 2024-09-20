@@ -36,13 +36,13 @@ import routes from "routes";
 // import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/projects/scopeBG.jpg";
+import bgImage from "assets/images/projects/optishipBG.jpg";
 // import post4 from "assets/images/airosimage2.png";
 import logo1 from "assets/images/projects/optiship.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
 
-function ContactUs() {
+function OptiShip() {
   return (
     <>
       <Navbar
@@ -66,7 +66,7 @@ function ContactUs() {
                 rgba(gradients.dark.state, 0.8)
               )}, url(${bgImage})`,
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "top",
             display: "grid",
             placeItems: "center",
           }}
@@ -241,4 +241,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default OptiShip;

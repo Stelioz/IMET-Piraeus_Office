@@ -40,9 +40,9 @@ function Counters() {
           <Grid item xs={12} md={4} display="flex" justifyContent="center">
             {/* <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} /> */}
             <DefaultCounterCard
-              count={400}
+              count={1700000}
               suffix="+"
-              title="Citations"
+              title="Total Budget"
               // description="Mix the sections, change the colors and unleash your creativity"
             />
             {/* <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} /> */}
@@ -50,7 +50,7 @@ function Counters() {
           <Grid item xs={12} md={4} display="flex" justifyContent="center">
             <DefaultCounterCard
               count={15}
-              title="Projects"
+              title="Projects & Studies"
               // description="Save 3-4 weeks of work when you use our pre-made pages for your website"
             />
           </Grid>

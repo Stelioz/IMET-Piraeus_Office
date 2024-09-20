@@ -42,7 +42,7 @@ import logo1 from "assets/images/projects/scope.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
 
-function ContactUs() {
+function Scope() {
   return (
     <>
       <Navbar
@@ -229,4 +229,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default Scope;

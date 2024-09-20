@@ -97,7 +97,7 @@ const routes = [
         component: <Am4Infra />,
       },
       {
-        name: "BEOPEN",
+        name: "BE OPEN",
         route: "/projects/beopen",
         component: <BeOpen />,
       },

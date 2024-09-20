@@ -36,13 +36,13 @@ import routes from "routes";
 // import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/projects/scopeBG.jpg";
+import bgImage from "assets/images/projects/impactsBG.jpg";
 // import post4 from "assets/images/airosimage2.png";
-import logo1 from "assets/images/projects/scope.png";
+import logo1 from "assets/images/projects/impacts.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
 
-function ContactUs() {
+function Impacts() {
   return (
     <>
       <Navbar
@@ -66,7 +66,7 @@ function ContactUs() {
                 rgba(gradients.dark.state, 0.8)
               )}, url(${bgImage})`,
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "bottom",
             display: "grid",
             placeItems: "center",
           }}
@@ -114,7 +114,7 @@ function ContactUs() {
                             Acronym:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}SCOPE
+                            {" "}IMPACTS
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -124,7 +124,7 @@ function ContactUs() {
                             Project Title:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}Shared freight transport services connecting shipper and carrier operations
+                            {" "}Inclusive Mobility: Public Αnd Collaborative Trusted Spaces
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -134,7 +134,7 @@ function ContactUs() {
                             Duration:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}34 months (09/09/2019 - 08/07/2022)
+                            {" "}12 months (01/01/2023 - 31/12/2023)
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -144,7 +144,7 @@ function ContactUs() {
                             Role:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}Lead Partner
+                            {" "}Partner
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -154,7 +154,7 @@ function ContactUs() {
                             Programme:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}Interreg Balkan Mediterranean
+                            {" "}EIT Urban Mobility, Co-funded by the European Union
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -164,7 +164,7 @@ function ContactUs() {
 
                 <Grid item xs={12} sm={4}>
                   <Container>
-                    <MKBox component="img" src={logo1} width="90%" sx={{ marginRight: '10px' }} />
+                    <MKBox component="img" src={logo1} width="80%" sx={{ marginRight: '10px' }} />
                   </Container>
                 </Grid>
               </Grid>
@@ -175,18 +175,19 @@ function ContactUs() {
               </MKTypography>
               <Container>
                 <MKTypography variant="body1" fontWeight="light" color="black" mb={5}>
-                  SCOPE aims to address existing inefficiencies (e.g. capacity utilization, fragmentation of
-                  activities, environmental sustainability) and improve the performance of the road freight
-                  transport system in the Balkan-Med region by providing a transnational, innovative and
-                  market-driven freight exchange platform. The SCOPE platform will build upon available knowledge
-                  and experience and will carefully consider local and transnational road freight transport
-                  conditions, providing value-added services meeting its users’ needs and requirements.
-                  The overall objective is to increase employment options and enhance regional competitiveness
-                  building upon available technological solutions for developing an innovative web-based platform
-                  that will facilitate shared road freight transport services efficiently connecting national and
-                  transnational shipper and carrier operations. Significant benefits will be provided to its users
-                  enhancing their territorial competitiveness and sustainability which, in turn, will contribute
-                  towards a more efficient business environment.
+                  Public transport (PT) has been supporting the mobility of all within the urban fabric. For
+                  instance, people living in a city move to meet each other, commute to their activities, and
+                  visitors move for sightseeing. Passengers choose it because it is well-fitted in the urban
+                  environment, cost-effective and safe. Even if passengers know that it is a safe way to move,
+                  the decreasing comfort due to overcrowding or funding allocation, limited services digitalization,
+                  difficulties to consider the needs of different target groups and outdated reporting mechanisms
+                  create an urban space of reduced perceived safety. On top of this, the pandemic has enhanced distrust.
+                  All the above discourage the use of PT, and thus, destroy opportunities of multimodal mobility,
+                  resources saving, traffic reduction, while it restrains future mobility from citizen feedback. At
+                  the same time cities, transport providers and Urban Mobility third parties focus merely on digital
+                  trip services and do not address citizen safety perceptions and wellbeing, while fail to collect and
+                  extract knowledge from citizen feedback. IMPACTS envisions a human-centric PT where passengers feel
+                  safe, support fellow travelers, and contribute with their feedback to an innovative PT.
                 </MKTypography>
               </Container>
             </Container>
@@ -195,11 +196,18 @@ function ContactUs() {
                 Objectives
               </MKTypography>
               <Container>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
+                  The IMPACTS project focuses on the development, implementation, testing and commercialization of
+                  connecting and reporting innovations in PT. IMPACTS also focuses on the bottom-up community-based
+                  innovations in existing critical urban mobility infrastructure that can have a dramatic impact on
+                  how we move in our cities. IMPACTS aims to:
+                </MKTypography>
                 <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
                   <ul>
-                    <li>SCOPE project aims to address existing inefficiencies and improve the performance of the road freight transport system in the Balkan-Med region by providing a transnational, innovative and market-driven freight exchange platform.</li>
-                    <li>The proposed platform will be built upon the continuous engagement of industry stakeholders with prospective users and upon careful consideration on users’ needs and requirements.</li>
-                    <li>The SCOPE platform will satisfy potential users’ recommendations through a tailored online booking system to facilitate freight exchanges between dully-certified users and offer advanced services, such as operating cost estimation, routing applications, cargo monitoring, truck driver simulator etc.</li>
+                    <li>Connect passengers in ad-hoc communities to create supportive spaces, enable passengers to report issues, create trust using rating mechanisms, and encourage behavior change through stimulating analytics.</li>
+                    <li>Enable cities and transport providers to receive real-time insights regarding passenger perception, exploit new feedback channels and extract knowledge.</li>
+                    <li>Deliver a new approach to public transport, applicable to other cities, enhancing the attractiveness and effectiveness of PT. Pilots in a megacity and a suburban area as well as the recognition of business opportunities aim to demonstrate the scaling up potential.</li>
+                    <li>Foster the use of public transport in EU and other regional cities and communities, contributing to the delivery of better mobility services for citizens, feedback management, traffic reduction, environmental effectiveness and better use of urban space.</li>
                   </ul>
                 </MKTypography>
               </Container>
@@ -208,12 +216,12 @@ function ContactUs() {
                   <MKTypography variant="body1" component="span" color="black" fontWeight="bold">
                     For further information, please visit the{" "}
                     <a
-                      href="https://scope-app.net/"
+                      href="https://www.impactsproject.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: "#4A90E2", textDecoration: "underline" }}
                     >
-                      SCOPE
+                      IMPACTS
                     </a>{" "}
                     website.
                   </MKTypography>
@@ -229,4 +237,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default Impacts;

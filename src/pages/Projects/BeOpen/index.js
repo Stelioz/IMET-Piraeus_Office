@@ -36,13 +36,13 @@ import routes from "routes";
 // import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/projects/scopeBG.jpg";
+import bgImage from "assets/images/projects/beopenBG.png";
 // import post4 from "assets/images/airosimage2.png";
-import logo1 from "assets/images/projects/scope.png";
+import logo1 from "assets/images/projects/beopen.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
 
-function ContactUs() {
+function BeOpen() {
   return (
     <>
       <Navbar
@@ -83,7 +83,7 @@ function ContactUs() {
               },
             })}
           >
-            BEOPEN{""}
+            BE OPEN{""}
           </MKTypography>
         </MKBox>
         <Card
@@ -114,7 +114,7 @@ function ContactUs() {
                             Acronym:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}BEOPEN
+                            {" "}BE OPEN
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -164,7 +164,7 @@ function ContactUs() {
 
                 <Grid item xs={12} sm={4}>
                   <Container>
-                    <MKBox component="img" src={logo1} width="90%" sx={{ marginRight: '10px' }} />
+                    <MKBox component="img" src={logo1} width="80%" sx={{ marginRight: '10px' }} />
                   </Container>
                 </Grid>
               </Grid>
@@ -205,10 +205,10 @@ function ContactUs() {
                 </MKTypography>
                 <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
                   <ul>
-                    <li>developing a framework of common understanding for realizing Open Science services that will provide technical interoperability, data and information interoperability and legal interoperability;</li>
-                    <li>developing the TOPOS forum and observatory for different stakeholders to support an evidence based dialogue;</li>
-                    <li>providing a roadmap and concrete guidelines for operationalizing Open Science services and guide key actors on how to adopt and adapt Open Science services in their research workf lows; and </li>
-                    <li>designing a Code of Conduct for adopting them considering the main legal and security issues for their implementation.</li>
+                    <li>Developing a framework of common understanding for realizing Open Science services that will provide technical interoperability, data and information interoperability and legal interoperability;</li>
+                    <li>Developing the TOPOS forum and observatory for different stakeholders to support an evidence based dialogue;</li>
+                    <li>Providing a roadmap and concrete guidelines for operationalizing Open Science services and guide key actors on how to adopt and adapt Open Science services in their research workf lows; and </li>
+                    <li>Designing a Code of Conduct for adopting them considering the main legal and security issues for their implementation.</li>
                   </ul>
                 </MKTypography>
               </Container>
@@ -222,7 +222,7 @@ function ContactUs() {
                       rel="noopener noreferrer"
                       style={{ color: "#4A90E2", textDecoration: "underline" }}
                     >
-                      BEOPEN
+                      BE OPEN
                     </a>{" "}
                     website.
                   </MKTypography>
@@ -238,4 +238,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default BeOpen;
