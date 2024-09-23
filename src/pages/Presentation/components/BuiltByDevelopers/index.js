@@ -59,7 +59,7 @@ function BuiltByDevelopers() {
           </MKTypography>
           <MKTypography
             component="a"
-            href="https://www.creative-tim.com/learning-lab/react/overview/material-kit/"
+            href="http://station.imet.local:8080/"
             target="_blank"
             rel="noreferrer"
             variant="body2"
@@ -80,7 +80,7 @@ function BuiltByDevelopers() {
               },
             }}
           >
-            Read more <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            Visit AIROS <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
           </MKTypography>
         </Grid>
       </Container>

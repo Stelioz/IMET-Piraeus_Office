@@ -43,6 +43,7 @@ function DefaultInfoCard({ color, icon, title, description, direction, small }) 
         display="block"
         variant="5"
         fontWeight="bold"
+        color="info"
         mt={direction === "center" ? 1 : 2}
         mb={1.5}
       >

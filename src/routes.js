@@ -41,12 +41,22 @@ import Icon from "@mui/material/Icon";
 
 // @mui icons
 // import GitHubIcon from "@mui/icons-material/GitHub";
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
 // Pages
+// import OurTeam from "layouts/pages/landing-pages/our-team";
 import AboutUs from "layouts/pages/landing-pages/about-us";
-import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
+// import ContactUs from "layouts/pages/landing-pages/contact-us";
 // import SignIn from "layouts/pages/authentication/sign-in";
+
+// Profiles
+// import Author from "layouts/pages/landing-pages/author";
+import Anagnos from "layouts/pages/profiles-pages/anagnostopoulou-page";
+import Akac from "layouts/pages/profiles-pages/attilas-page";
+import Kitsios from "layouts/pages/profiles-pages/kitsios-page";
+import Pappa from "layouts/pages/profiles-pages/pappa-page";
+
+// Projects
 import Am4Infra from "layouts/pages/projects-pages/am4infra-page";
 import BeOpen from "layouts/pages/projects-pages/beopen-page";
 import Impacts from "layouts/pages/projects-pages/impacts-page";
@@ -81,16 +91,16 @@ const routes = [
     // columns: 1,
     // rowsPerColumn: 2,
     collapse: [
-      {
-        name: "about us",
-        route: "/pages/landing-pages/about-us",
-        component: <AboutUs />,
-      },
-      {
-        name: "contact us",
-        route: "/pages/landing-pages/contact-us",
-        component: <ContactUs />,
-      },
+      // {
+      //   name: "about us",
+      //   route: "/pages/landing-pages/about-us",
+      //   component: <AboutUs />,
+      // },
+      // {
+      //   name: "contact us",
+      //   route: "/pages/landing-pages/contact-us",
+      //   component: <ContactUs />,
+      // },
       {
         name: "AM4INFRA",
         route: "/projects/am4infra",
@@ -121,18 +131,56 @@ const routes = [
         route: "/projects/scope",
         component: <Scope />,
       },
-      {
-        name: "author",
-        route: "/pages/landing-pages/author",
-        component: <Author />,
-      },
+      // {
+      //   name: "Author",
+      //   route: "/pages/landing-pages/author",
+      //   component: <Author />,
+      // },
     ],
   },
   {
     name: "Our Team",
     icon: <Icon>people</Icon>,
-    route: "/pages/landing-pages/about-us",
+    route: "/our-team",
     component: <AboutUs />,
+  },
+  {
+    name: "Structure",
+    icon: <AccountTreeIcon/ >,
+    columns: 1,
+    rowsPerColumn: 2,
+    collapse: [
+      {
+        name: "Head",
+        collapse: [
+          {
+            name: "Afroditi Anagnostopoulou",
+            route: "/our-team/anagnostopoulou",
+            component: <Anagnos />,
+          },
+        ],
+      },
+      {
+        name: "Researchers",
+        collapse: [
+          {
+            name: "Attila Akac",
+            route: "/our-team/akac",
+            component: <Akac />,
+          },
+          {
+            name: "Xenofon Kitsios",
+            route: "/our-team/kitsios",
+            component: <Kitsios />,
+          },
+          {
+            name: "Ioanna Pappa",
+            route: "/our-team/pappa",
+            component: <Pappa />,
+          },
+        ],
+      },
+    ],
   },
   {
     name: "About Us",
@@ -145,7 +193,7 @@ const routes = [
       },
       {
         name: "Visit CERTH",
-        description: "Center for Research and Technology Hellas",
+        description: "Center for Research & Technology Hellas",
         href: "https://www.certh.gr/root.en.aspx",
       },
       // {
@@ -163,6 +211,8 @@ const routes = [
   // {
   //   name: "Our Team",
   //   icon: <Icon>view_day</Icon>,
+  //   route: "/paparia-mentrtoles",
+  //   component: <AboutUs />,
   //   collapse: [
   //     {
   //       name: "page sections",

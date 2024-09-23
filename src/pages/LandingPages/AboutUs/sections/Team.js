@@ -27,6 +27,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 
+// Profiles
+// import Akac from "layouts/pages/profiles-pages/attilas-page";
 
 // Images
 import team1 from "assets/images/xenof.jpg";
@@ -47,7 +49,7 @@ function Team() {
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
             <MKTypography variant="h3" color="white">
-              The Team
+              Researchers
             </MKTypography>
           </Grid>
         </Grid>
@@ -58,7 +60,7 @@ function Team() {
                 image={team2}
                 name={
                   <a
-                    href="https://www.linkedin.com/in/attila-akac-354ba384/"
+                    href="/our-team/akac" rel="noopener noreferrer"
                     style={{ color: "inherit", textDecoration: "none" }}
                   >
                     Attila Akac
@@ -108,7 +110,7 @@ function Team() {
                 image={team1}
                 name={
                   <a
-                    href="https://www.linkedin.com/in/xkitsios/"
+                    href="/our-team/kitsios" rel="noopener noreferrer"
                     style={{ color: "inherit", textDecoration: "none" }}
                   >
                     Xenofon Kitsios
@@ -158,7 +160,7 @@ function Team() {
                 image={team3}
                 name={
                   <a
-                    href="https://www.linkedin.com/in/ioanna-pappa-39550928/"
+                    href="/our-team/pappa" rel="noopener noreferrer"
                     style={{ color: "inherit", textDecoration: "none" }}
                   >
                     Ioanna Pappa

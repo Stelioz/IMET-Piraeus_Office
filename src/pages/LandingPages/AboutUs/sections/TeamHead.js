@@ -55,7 +55,7 @@ function TeamHead() {
                 image={team1}
                 name={
                   <a
-                    href="https://www.linkedin.com/in/afroditi-anagnostopoulou-951a6913/"
+                    href="/our-team/anagnostopoulou" rel="noopener noreferrer"
                     style={{ color: "inherit", textDecoration: "none" }}
                   >
                     Afroditi Anagnostopoulou

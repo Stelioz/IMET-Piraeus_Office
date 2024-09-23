@@ -21,13 +21,13 @@ import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 
 // Material Kit 2 React examples
-import RotatingCard from "examples/Cards/RotatingCard";
+// import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
-import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
+// import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 // Images
-// import bgFront from "assets/images/rotating-card-bg-front.jpeg";
+// import bgFront from "assets/images/illustrations/hit-image1-raw.png";
 // import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 function Information() {
@@ -36,10 +36,9 @@ function Information() {
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
               <RotatingCardFront
                 // image={bgFront}
-                icon="touch_app"
+                icon="dashboard"
                 title={
                   <>
                     Research
@@ -49,31 +48,34 @@ function Information() {
                 }
                 // description="All the MUI components that you need in a development have been re-design with the new look."
               />
-              <RotatingCardBack
-                // image={bgBack}
-                title="Discover More"
-                // description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "Start Here",
-                }}
-              />
-            </RotatingCard>
           </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   // icon="content_copy"
-                  title="Scilake"
+                  title={
+                    <a
+                      href="/projects/scilake" rel="noopener noreferrer"
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      SciLake
+                    </a>
+                  }
                   description="Scientific Knowledge Graphs in the heart of Open Science"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   // icon="flip_to_front"
-                  title="OptiShip"
+                  title={
+                    <a
+                      href="/projects/scilake" rel="noopener noreferrer"
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      OptiShip
+                    </a>
+                  }
                   description="OPTImization of Life Cycle in the SHIPping industry"
                 />
               </Grid>
@@ -82,14 +84,28 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   // icon="price_change"
-                  title="Scope"
+                  title={
+                    <a
+                      href="/projects/scilake" rel="noopener noreferrer"
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      Scope
+                    </a>
+                  }
                   description="Shared freight transport services connecting shipper and carrier operations"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   // icon="devices"
-                  title="BEOPEN"
+                  title={
+                    <a
+                      href="/projects/scilake" rel="noopener noreferrer"
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      BE OPEN
+                    </a>
+                  }
                   description="European forum and oBsErvatory for OPEN science in transport"
                 />
               </Grid>
