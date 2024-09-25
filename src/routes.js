@@ -41,7 +41,7 @@ import Icon from "@mui/material/Icon";
 
 // @mui icons
 // import GitHubIcon from "@mui/icons-material/GitHub";
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
+// import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
 // Pages
 // import OurTeam from "layouts/pages/landing-pages/our-team";
@@ -143,10 +143,6 @@ const routes = [
     icon: <Icon>people</Icon>,
     route: "/our-team",
     component: <AboutUs />,
-  },
-  {
-    name: "Structure",
-    icon: <AccountTreeIcon/ >,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
@@ -182,6 +178,10 @@ const routes = [
       },
     ],
   },
+  // {
+  //   name: "Structure",
+  //   icon: <AccountTreeIcon/ >,
+  // },
   {
     name: "About Us",
     icon: <Icon>info</Icon>,

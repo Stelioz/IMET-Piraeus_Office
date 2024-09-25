@@ -41,7 +41,7 @@ function Counters() {
             {/* <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} /> */}
             <DefaultCounterCard
               count={1700000}
-              suffix="+"
+              suffix="+€"
               title="Total Budget"
               // description="Mix the sections, change the colors and unleash your creativity"
             />

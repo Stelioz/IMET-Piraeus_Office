@@ -83,6 +83,10 @@ export default function App() {
   const getRoutes = (allRoutes) =>
     allRoutes.flatMap((route) => {
       if (route.collapse) {
+        if (route.route != null){
+          var top = [<Route exact path={route.route} element={route.component} key={route.route} />];
+          return top.concat(getRoutes(route.collapse));
+        }
         return getRoutes(route.collapse);
       }
 
