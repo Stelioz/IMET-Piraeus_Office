@@ -174,7 +174,7 @@ function OptiShip() {
                 Description
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1} textAlign="justify">
                   Life Cycle Analysis (LCA) or Life Cycle Performable Analysis (LCPA) is based on modern mathematical
                   models and contributes to business decision-making. LCA is also applied to shipping by examining the
                   three life phases of a ship: (Ι) design & construction, (ΙΙ) operation & maintenance, and (ΙΙΙ) end
@@ -183,11 +183,11 @@ function OptiShip() {
                   applied operational research with (2) naval architecture, (3) marine hydrodynamics, and (4) key
                   performance indicators (KPIs) to provide decision support in all areas of the maritime industry.
                 </MKTypography>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1} textAlign="justify">
                   OptiShip provides an innovative combined solution to address the various challenges highlighted,
                   through a cloud-based consulting platform that will not require additional equipment, offering:
                 </MKTypography>
-                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
+                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3} textAlign="justify">
                   <ul>
                     <li>Supporting existing vessels throughout their life cycle, as opposed to simply optimizing the design, as has been the practice to date.</li>
                     <li>Decision support through autonomous evaluation of many alternative scenarios and ship compositions.</li>
@@ -201,12 +201,12 @@ function OptiShip() {
                 Objectives
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1} textAlign="justify">
                   The OptiShip project focuses on the development, testing, implementation, evaluation and commercialization
                   of a holistic online cloud-based LCA platform for the life cycle of a ship (phases I, II, III) and its
                   structural parts. The OptiShip project aims to:
                 </MKTypography>
-                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
+                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3} textAlign="justify">
                   <ul>
                     <li>create a decision-support tool for shipyards, shipping companies, brokers, banks, insurance companies, engineering companies, etc</li>
                     <li>develop a prototype platform, which will make decisive progress in the analysis of the 3 phases of a ship&apos;s life with new models for phases II & III of LCA and the introduction of a database for the majority of ship types (e.g. tankers, bulk carriers, gas, passenger).</li>

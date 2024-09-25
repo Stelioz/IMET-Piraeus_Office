@@ -75,7 +75,7 @@ function Profile() {
                   </MKTypography>
                 </Grid> */}
               </Grid>
-              <MKTypography variant="body1" fontWeight="light" color="text">
+              <MKTypography variant="body1" fontWeight="light" color="text" textAlign="justify">
                 Ioanna Pappa was born in Arta (Greece) in 1979. She holds a Degree (BSc) in Economics
                 (Department of Economics) and an MSc in Services Management (Department of Business
                 Administration) from the Athens University of Economics (AUEB). <br /> <br />

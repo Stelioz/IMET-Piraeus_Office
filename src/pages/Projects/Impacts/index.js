@@ -174,7 +174,7 @@ function Impacts() {
                 Description
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={5}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={5} textAlign="justify">
                   Public transport (PT) has been supporting the mobility of all within the urban fabric. For
                   instance, people living in a city move to meet each other, commute to their activities, and
                   visitors move for sightseeing. Passengers choose it because it is well-fitted in the urban
@@ -196,13 +196,13 @@ function Impacts() {
                 Objectives
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1} textAlign="justify">
                   The IMPACTS project focuses on the development, implementation, testing and commercialization of
                   connecting and reporting innovations in PT. IMPACTS also focuses on the bottom-up community-based
                   innovations in existing critical urban mobility infrastructure that can have a dramatic impact on
                   how we move in our cities. IMPACTS aims to:
                 </MKTypography>
-                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
+                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3} textAlign="justify">
                   <ul>
                     <li>Connect passengers in ad-hoc communities to create supportive spaces, enable passengers to report issues, create trust using rating mechanisms, and encourage behavior change through stimulating analytics.</li>
                     <li>Enable cities and transport providers to receive real-time insights regarding passenger perception, exploit new feedback channels and extract knowledge.</li>

@@ -28,7 +28,7 @@ function Counters() {
   return (
     <MKBox component="section" py={2}>
       <Container>
-        <Grid container item xs={12} lg={9} sx={{ mx: "auto" }} justifyContent="center" spacing={3}>
+        <Grid container item xs={12} lg={9} sx={{ mx: "auto" }} justifyContent="center" spacing={0}>
           <Grid item xs={12} md={4} display="flex" justifyContent="center">
             <DefaultCounterCard
               count={50}

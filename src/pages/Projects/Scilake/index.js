@@ -174,7 +174,7 @@ function Scilake() {
                 Description
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={5}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={5} textAlign="justify">
                   SciLake&apos;s mission is to build upon the OpenAIRE ecosystem and EOSC services to (a) facilitate
                   and empower the creation, interlinking and maintenance of Scientific/Scholarly Knowledge Graphs
                   (SKGs) and the execution of data science and graph mining queries on top of them, (b) contribute
@@ -204,13 +204,13 @@ function Scilake() {
                 Objectives
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1} textAlign="justify">
                   SciLake builds upon the OpenAIRE ecosystem and EOSC services to enable creation, interlinking, and maintenance
                   of Science Knowledge Graphs (SKGs) and execution of data science and graph mining queries on top of them unlock
                   the vast scientific knowledge space with advanced, AI-based services that exploit customized perspectives.
                   More specifically:
                 </MKTypography>
-                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
+                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3} textAlign="justify">
                   <ul>
                     <li>Identify and address domain-specific cross-disciplinary information needs while managing heterogeneous scholarly content.</li>
                     <li>Democratize scholarly content by facilitating, interlinking, and managing of community-based SKGs.</li>

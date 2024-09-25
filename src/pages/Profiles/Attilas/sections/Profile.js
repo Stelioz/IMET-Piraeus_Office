@@ -75,7 +75,7 @@ function Profile() {
                   </MKTypography>
                 </Grid> */}
               </Grid>
-              <MKTypography variant="body1" fontWeight="light" color="text">
+              <MKTypography variant="body1" fontWeight="light" color="text" textAlign="justify">
                 Attila Akac was born in the city of Pecs, Hungary. He has been working as a Research
                 Associate at the Hellenic Institute of Transport / Centre for Research and Technology
                 Hellas since 2018 with the specialization of &quot;Energy & Production Engineer&quot;, performing

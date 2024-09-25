@@ -118,7 +118,7 @@ const routes = [
       },
       {
         name: "OptiShip",
-        route: "/projects/optiShip",
+        route: "/projects/optiship",
         component: <OptiShip />,
       },
       {
@@ -165,7 +165,7 @@ const routes = [
             component: <Akac />,
           },
           {
-            name: "Xenofon Kitsios",
+            name: "Xenophon Kitsios",
             route: "/our-team/kitsios",
             component: <Kitsios />,
           },

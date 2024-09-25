@@ -52,7 +52,7 @@ function BuiltByDevelopers() {
           <MKTypography variant="h1" color="white" mb={1}>
             AIROS Services
           </MKTypography>
-          <MKTypography variant="body1" color="white" opacity={0.8} mb={4}>
+          <MKTypography variant="body1" color="white" opacity={0.8} mb={4} textAlign="justify">
             The AIROS services aim to revolutionize port operations through the development and implementation
             of AI-powered maritime services that use Automatic Identification System (AIS) data for dynamic vessel
             monitoring and real-time tracking.
