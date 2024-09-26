@@ -99,6 +99,7 @@ function home() {
             <MKTypography
               variant="h2"
               color="white"
+              textAlign="center"
               mt={-6}
               mb={0}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -135,7 +136,7 @@ function home() {
         <Container>
           <Grid container spacing={3} mt={2}>
             <Grid item ml={2} xs={12} sm={12} lg={12}>
-              <MKTypography variant="body1" fontWeight="light" color="black">
+              <MKTypography variant="body1" fontWeight="light" color="black" textAlign="justify">
                 The Hellenic Institute of Transport (HIT) of the Centre for Research and Technology Hellas (CERTH)
                 is the leading transport research Institute in the country and one of
                 the most recognized research bodies at European and international level, with a

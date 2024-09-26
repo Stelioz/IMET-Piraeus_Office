@@ -37,12 +37,12 @@ function Profile() {
       <Container>
         <Grid container item xs={12} justifyContent="center" mx="auto">
           <MKBox mt={{ xs: -16, md: -20 }} textAlign="center">
-            <img src={profilePicture} alt="Xenofon Kitsios" style={{ width: "200px", borderRadius: "15%" }} />
+            <img src={profilePicture} alt="Xenophon Kitsios" style={{ width: "200px", borderRadius: "15%" }} />
           </MKBox>
           <Grid container justifyContent="center" py={4}>
             <Grid item xs={12} md={8} mx={{ xs: "auto", sm: 6, md: 1 }}>
               <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-                <MKTypography variant="h3">Xenofon Kitsios</MKTypography>
+                <MKTypography variant="h3">Xenophon Kitsios</MKTypography>
                 <MKButton
                   variant="outlined"
                   color="info"
@@ -75,7 +75,7 @@ function Profile() {
                   </MKTypography>
                 </Grid> */}
               </Grid>
-              <MKTypography variant="body1" fontWeight="light" color="text">
+              <MKTypography variant="body1" fontWeight="light" color="text" textAlign="justify">
                 Xenophon Kitsios has been employed as a computer scientist at the Hellenic Institute of
                 Transport of the Centre for Research and Technology Hellas since December 2019. <br /> <br />
                 He is a graduate of the department of Informatics and Telecommunications at the National and

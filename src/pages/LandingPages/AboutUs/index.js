@@ -87,6 +87,7 @@ function AboutUs() {
             <MKTypography
               variant="h2"
               color="white"
+              textAlign="center"
               mt={-6}
               mb={0}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -121,7 +122,7 @@ function AboutUs() {
         <Container>
           <Grid container spacing={3} mt={2} mb={6}>
             <Grid item ml={2} xs={12} sm={12} lg={12}>
-              <MKTypography variant="body1" fontWeight="light" color="black">
+              <MKTypography variant="body1" fontWeight="light" color="black" textAlign="justify">
                 The Piraeus team consists of specialists with advanced degrees and extensive experience in
                 managing national and European research projects. Their expertise spans various areas such
                 as transport economics, operations research, energy and environment challenges in the

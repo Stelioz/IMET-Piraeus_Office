@@ -174,7 +174,7 @@ function BeOpen() {
                 Description
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={5}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={5} textAlign="justify">
                   The BE OPEN project aims to create a common understanding on the practical impact of Open
                   Science and to identify and put in place the mechanisms to make it a reality in transport
                   research. Achieving Open Access to publications, making their underlying data FAIR (Findable,
@@ -200,10 +200,10 @@ function BeOpen() {
                 Objectives
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1} textAlign="justify">
                   BE OPEN targets the promotion, regulation and standardization of Open Science in transport research through:
                 </MKTypography>
-                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
+                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3} textAlign="justify">
                   <ul>
                     <li>Developing a framework of common understanding for realizing Open Science services that will provide technical interoperability, data and information interoperability and legal interoperability;</li>
                     <li>Developing the TOPOS forum and observatory for different stakeholders to support an evidence based dialogue;</li>

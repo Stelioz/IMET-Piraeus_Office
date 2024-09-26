@@ -34,7 +34,7 @@ function Information() {
   return (
     <MKBox component="section" py={5} my={5}>
       <Container>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
+        <Grid container item xs={11} spacing={0} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
               <RotatingCardFront
                 // image={bgFront}
@@ -70,7 +70,7 @@ function Information() {
                   // icon="flip_to_front"
                   title={
                     <a
-                      href="/projects/scilake" rel="noopener noreferrer"
+                      href="/projects/optiship" rel="noopener noreferrer"
                       style={{ color: "inherit", textDecoration: "none" }}
                     >
                       OptiShip
@@ -86,7 +86,7 @@ function Information() {
                   // icon="price_change"
                   title={
                     <a
-                      href="/projects/scilake" rel="noopener noreferrer"
+                      href="/projects/scope" rel="noopener noreferrer"
                       style={{ color: "inherit", textDecoration: "none" }}
                     >
                       Scope
@@ -100,7 +100,7 @@ function Information() {
                   // icon="devices"
                   title={
                     <a
-                      href="/projects/scilake" rel="noopener noreferrer"
+                      href="/projects/beopen" rel="noopener noreferrer"
                       style={{ color: "inherit", textDecoration: "none" }}
                     >
                       BE OPEN

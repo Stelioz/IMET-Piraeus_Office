@@ -174,7 +174,7 @@ function am4infra() {
                 Description
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={5}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={5} textAlign="justify">
                   AM4INFRA project is a coordination and support action (CSA) funded by the H2020 programme with
                   the aim to enable transparent, risk-based optimization of investments within and across the modes.
                   The overall objective of this CSA is to launch a life cycle and risk based Asset Management (AM)
@@ -201,10 +201,10 @@ function am4infra() {
                 Objectives
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={1}>
-                  The main objectives of AM4INFRA are
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={1} textAlign="justify">
+                  The main objectives of AM4INFRA are:
                 </MKTypography>
-                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
+                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3} textAlign="justify">
                   <ul>
                     <li>To provide NIAs with insight on how AM practices would support the development of network management strategy, adoption of decision making processes, operational requirements and how asset knowledge can be utilized.</li>
                     <li>To provide NIAs with a common, practical framework for a life cycle and risk based AM approach capable of governance on the highest aggregation level of (cross-modal) network considerations.</li>

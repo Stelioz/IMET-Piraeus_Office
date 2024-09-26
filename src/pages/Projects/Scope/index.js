@@ -174,7 +174,7 @@ function Scope() {
                 Description
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" mb={5}>
+                <MKTypography variant="body1" fontWeight="light" color="black" mb={5} textAlign="justify">
                   SCOPE aims to address existing inefficiencies (e.g. capacity utilization, fragmentation of
                   activities, environmental sustainability) and improve the performance of the road freight
                   transport system in the Balkan-Med region by providing a transnational, innovative and
@@ -195,7 +195,7 @@ function Scope() {
                 Objectives
               </MKTypography>
               <Container>
-                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3}>
+                <MKTypography variant="body1" fontWeight="light" color="black" ml={3} mb={3} textAlign="justify">
                   <ul>
                     <li>SCOPE project aims to address existing inefficiencies and improve the performance of the road freight transport system in the Balkan-Med region by providing a transnational, innovative and market-driven freight exchange platform.</li>
                     <li>The proposed platform will be built upon the continuous engagement of industry stakeholders with prospective users and upon careful consideration on users’ needs and requirements.</li>
