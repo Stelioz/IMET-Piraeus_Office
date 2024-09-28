@@ -22,10 +22,14 @@ import bgImage from "assets/images/airosimage.png";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import { useEffect } from "react"
 
 function BuiltByDevelopers() {
   // const bgImage =
   //   "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
+  useEffect(() => {
+    document.title = "Home | HIT Piraeus Office"
+  }, [])
 
   return (
     <MKBox
@@ -57,30 +61,84 @@ function BuiltByDevelopers() {
             of AI-powered maritime services that use Automatic Identification System (AIS) data for dynamic vessel
             monitoring and real-time tracking.
           </MKTypography>
-          <MKTypography
-            component="a"
-            href="http://station.imet.local:8080/"
-            target="_blank"
-            rel="noreferrer"
-            variant="body2"
-            color="white"
-            fontWeight="regular"
-            sx={{
-              display: "flex",
-              alignItems: "center",
+          <MKTypography component="ul" sx={{"list-style-type":"none", padding:"0", margin:"0"}}>
+            <MKTypography component="li">
+              <MKTypography
+                component="a"
+                href="https://www.marinetraffic.com/ais/details/stations/38283"
+                rel="noreferrer"
+                variant="body2"
+                color="white"
+                fontWeight="regular"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
 
-              "& .material-icons-round": {
-                fontSize: "1.125rem",
-                transform: `translateX(3px)`,
-                transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
-              },
+                  "& .material-icons-round": {
+                    fontSize: "1.125rem",
+                    transform: `translateX(3px)`,
+                    transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
+                  },
 
-              "&:hover .material-icons-round, &:focus .material-icons-round": {
-                transform: `translateX(6px)`,
-              },
-            }}
-          >
-            Visit AIROS <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+                  "&:hover .material-icons-round, &:focus .material-icons-round": {
+                    transform: `translateX(6px)`,
+                  },
+                }}
+              >
+                View station on MarineTraffic <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              </MKTypography>
+            </MKTypography>
+            <MKTypography component="li">
+              <MKTypography
+                component="a"
+                href="https://www.aishub.net/stations/3074"
+                rel="noreferrer"
+                variant="body2"
+                color="white"
+                fontWeight="regular"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+
+                  "& .material-icons-round": {
+                    fontSize: "1.125rem",
+                    transform: `translateX(3px)`,
+                    transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
+                  },
+
+                  "&:hover .material-icons-round, &:focus .material-icons-round": {
+                    transform: `translateX(6px)`,
+                  },
+                }}
+              >
+                View station on AISHub <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              </MKTypography>
+            </MKTypography>
+            <MKTypography component="li">
+              <MKTypography
+                component="a"
+                rel="noreferrer"
+                variant="body2"
+                color="white"
+                fontWeight="regular"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+
+                  "& .material-icons-round": {
+                    fontSize: "1.125rem",
+                    transform: `translateX(3px)`,
+                    transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
+                  },
+
+                  "&:hover .material-icons-round, &:focus .material-icons-round": {
+                    transform: `translateX(6px)`,
+                  },
+                }}
+              >
+                Download station&apos;s data (coming soon) <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              </MKTypography>
+            </MKTypography>
           </MKTypography>
         </Grid>
       </Container>

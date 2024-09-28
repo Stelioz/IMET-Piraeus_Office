@@ -41,8 +41,13 @@ import bgImage from "assets/images/projects/am4infraBG.jpg";
 import logo1 from "assets/images/projects/am4infra.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
+import { useEffect } from "react"
 
 function am4infra() {
+  useEffect(() => {
+    document.title = "AM4INFRA | HIT Piraeus Office"
+  }, [])
+
   return (
     <>
       <Navbar

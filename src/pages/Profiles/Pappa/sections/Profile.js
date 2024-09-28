@@ -30,8 +30,13 @@ import PhoneIcon from "@mui/icons-material/Phone";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import WorkIcon from "@mui/icons-material/Work";
+import { useEffect } from "react"
 
 function Profile() {
+  useEffect(() => {
+    document.title = "Ioanna Pappa | HIT Piraeus Office"
+  }, [])
+
   return (
     <MKBox component="section" py={{ xs: 5, sm: 5 }}>
       <Container>

@@ -30,8 +30,13 @@ import PhoneIcon from "@mui/icons-material/Phone";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import WorkIcon from "@mui/icons-material/Work";
+import { useEffect } from "react"
 
 function Profile() {
+  useEffect(() => {
+    document.title = "Attila Akac | HIT Piraeus Office"
+  }, [])
+
   return (
     <MKBox component="section" py={{ xs: 5, sm: 5 }}>
       <Container>
@@ -82,7 +87,7 @@ function Profile() {
                 multiple tasks in European, Regional and National projects of the Energy, Economic and
                 Environmental Issues - Maritime and Air Transport Division of the Institute. <br /> <br />
                 He is a graduate of the School of Production Engineering and Management of the
-                Technical University of Crete (Integrated BSc & MSc), a graduate (MSc)of the School
+                Technical University of Crete (Integrated BSc & MSc), a graduate (MSc) of the School
                 of Mechanical Engineering of the Heriot-Watt University of Edinburgh (in collaboration
                 with the University of West Attica) and a member of the Technical Chamber of Greece
                 (TEEE-TCG). His research interest and specialisation focuses on the (1) evaluation of

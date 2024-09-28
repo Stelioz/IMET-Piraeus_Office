@@ -41,8 +41,13 @@ import bgImage from "assets/images/projects/scopeBG.jpg";
 import logo1 from "assets/images/projects/scope.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
+import { useEffect } from "react"
 
 function Scope() {
+  useEffect(() => {
+    document.title = "SCOPE | HIT Piraeus Office"
+  }, [])
+
   return (
     <>
       <Navbar

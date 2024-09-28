@@ -41,8 +41,13 @@ import bgImage from "assets/images/projects/beopenBG.png";
 import logo1 from "assets/images/projects/beopen.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
+import { useEffect } from "react"
 
 function BeOpen() {
+  useEffect(() => {
+    document.title = "BE OPEN | HIT Piraeus Office"
+  }, [])
+
   return (
     <>
       <Navbar

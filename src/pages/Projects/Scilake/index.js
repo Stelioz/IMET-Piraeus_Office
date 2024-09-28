@@ -41,8 +41,13 @@ import bgImage from "assets/images/projects/scilakeBG.png";
 import logo1 from "assets/images/projects/scilake.png";
 // import logo2 from "assets/images/airosimage2.png";
 // import logo3 from "assets/images/airosimage2.png";
+import { useEffect } from "react"
 
 function Scilake() {
+  useEffect(() => {
+    document.title = "SciLake | HIT Piraeus Office"
+  }, [])
+
   return (
     <>
       <Navbar
@@ -83,7 +88,7 @@ function Scilake() {
               },
             })}
           >
-            SCILAKE{""}
+            SciLake{""}
           </MKTypography>
         </MKBox>
         <Card
@@ -114,7 +119,7 @@ function Scilake() {
                             Acronym:
                           </MKTypography>
                           <MKTypography variant="body1" component="span" color="black" fontWeight="light">
-                            {" "}SCILAKE
+                            {" "}SciLake
                           </MKTypography>
                         </MKBox>
                       </ListItem>
@@ -231,7 +236,7 @@ function Scilake() {
                       rel="noopener noreferrer"
                       style={{ color: "#4A90E2", textDecoration: "underline" }}
                     >
-                      SCILAKE
+                      SciLake
                     </a>{" "}
                     website.
                   </MKTypography>

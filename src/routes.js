@@ -112,7 +112,7 @@ const routes = [
         component: <BeOpen />,
       },
       {
-        name: "Impacts",
+        name: "IMPACTS",
         route: "/projects/impacts",
         component: <Impacts />,
       },
@@ -122,12 +122,12 @@ const routes = [
         component: <OptiShip />,
       },
       {
-        name: "Scilake",
+        name: "SciLake",
         route: "/projects/scilake",
         component: <Scilake />,
       },
       {
-        name: "Scope",
+        name: "SCOPE",
         route: "/projects/scope",
         component: <Scope />,
       },
