@@ -33,7 +33,7 @@ Navigate to your server directory where `intex.html` is located. Create a file n
 <br/>
 
 ## Software Development Team
-* Zindros Stylianos
+* Stylianos Zindros
 * Xenofon Kitsios
 <br/>
 
