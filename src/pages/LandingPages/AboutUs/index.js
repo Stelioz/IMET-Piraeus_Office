@@ -41,8 +41,13 @@ import footerRoutes from "footer.routes";
 // Images
 import bgImage from "assets/images/hit-image2.png";
 import logo from "assets/images/HITlogos/HITLogo.png";
+import { useEffect } from "react"
 
 function AboutUs() {
+  useEffect(() => {
+    document.title = "Our Team | HIT Piraeus Office"
+  }, [])
+  
   return (
     <>
       <Navbar
