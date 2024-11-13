@@ -94,7 +94,7 @@ function Profile() {
                 <p>
                   <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                     <WorkIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                    <a
+                    <a href="https://maps.app.goo.gl/YatUZXgm3qRsMT9JA"
                       style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                     >
                       Egialias 52, Marousi, Attica, 15125
@@ -102,7 +102,7 @@ function Profile() {
                   </span>
                   <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                     <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                    <a
+                    <a href="tel:+302111069588"
                       style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                     >
                       +30.211.1069588
@@ -110,7 +110,7 @@ function Profile() {
                   </span>
                   <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                     <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                    <a
+                    <a href="mailto:ipappa@certh.gr"
                       style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                     >
                       ipappa@certh.gr

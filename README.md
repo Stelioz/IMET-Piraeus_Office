@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/45beaf4c-6875-4c3b-b906-02cf028f73b7)
 
-# [HIT Piraeus Office](https://hot.dit.hua.gr/) ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+# [HIT Piraeus Office](https://imet-piraeus.gr/) ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 The Hellenic Institute of Transport (HIT) of the Centre for Research and Technology Hellas (CERTH) is the leading transport research Institute in the country and one of the most recognized research bodies at European and international level, with a strong expertise in shipping and maritime transport, and significant research experience on sustainable urban and regional development. The aim of Piraeus Office activities is to bring together research with businesses and local industry, enhancing the innovation and competitiveness ecosystem. The Piraeus Office is housed in the Piraeus Chamber of Commerce and Industry (PCCI), in the heart of the city of Piraeus.
 <br/><br/>

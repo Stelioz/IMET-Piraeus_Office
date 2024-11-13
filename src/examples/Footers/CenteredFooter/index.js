@@ -23,7 +23,7 @@ import Stack from "@mui/material/Stack";
 
 // @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -106,15 +106,11 @@ function CenteredFooter({ company, socials, light }) {
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
   company: { href: "https://github.com/Stelioz", name: "Stelioz" },
-  links: [
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
-  ],
   socials: [
     { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/HitCerth/" },
-    { icon: <TwitterIcon fontSize="small" />,  link: "https://x.com/HitCerth",},
+    { icon: <XIcon fontSize="small" />,  link: "https://x.com/HitCerth/",},
     { icon: <InstagramIcon fontSize="small" />, link: "https://www.instagram.com/hit.certh/", },
-    { icon: <YouTubeIcon fontSize="small" />, link: "https://www.youtube.com/channel/UCS9jvbxsnB-lS74olF4R_5g", },
+    { icon: <YouTubeIcon fontSize="small" />, link: "https://www.youtube.com/channel/UCS9jvbxsnB-lS74olF4R_5g/", },
     { icon: <LinkedInIcon fontSize="small" />, link: "https://www.linkedin.com/company/hellenic-institute-of-transport/" },
   ],
   light: false,

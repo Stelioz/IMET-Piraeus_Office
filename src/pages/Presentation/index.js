@@ -46,6 +46,10 @@ import footerRoutes from "footer.routes";
 // Images
 import bgImage from "assets/images/hit-image1.png";
 import logo from "assets/images/HITlogos/HITLogo.png";
+import PhoneIcon from "@mui/icons-material/Phone";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailIcon from "@mui/icons-material/Mail";
+import WorkIcon from "@mui/icons-material/Work";
 
 function home() {
   return (
@@ -145,6 +149,37 @@ function home() {
                 Office activities is to bring together research with businesses and local industry,
                 enhancing the innovation and competitiveness ecosystem. The Piraeus Office is housed
                 in the Piraeus Chamber of Commerce and Industry (PCCI), in the heart of the city of Piraeus. 
+              </MKTypography>
+            </Grid>
+            <Grid item ml={2} xs={12} sm={12} lg={12}>
+            <MKTypography variant="body1" fontWeight="light" color="black" textAlign="justify">
+              <p>
+                Contact Details
+                <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                    <WorkIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                    <a href="https://maps.app.goo.gl/afqEK3ANYd5imTnRA"
+                      style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                    >
+                      G.Kasimati 1, Piraeus, Attica, 18531
+                    </a>
+                  </span>
+                  <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                    <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                    <a href="tel:+302110130491"
+                      style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                    >
+                      +30.211.0130491
+                    </a>
+                  </span>
+                  <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
+                    <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
+                    <a href="mailto:imet-piraeus@certh.gr"
+                      style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
+                    >
+                      imet-piraeus@certh.gr
+                    </a>
+                  </span>
+                </p>
               </MKTypography>
             </Grid>
           </Grid>

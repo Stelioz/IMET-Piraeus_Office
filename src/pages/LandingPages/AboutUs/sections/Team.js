@@ -31,8 +31,8 @@ import MailIcon from "@mui/icons-material/Mail";
 // import Akac from "layouts/pages/profiles-pages/attilas-page";
 
 // Images
-import team1 from "assets/images/xenof.jpg";
-import team2 from "assets/images/attila.jpg";
+import team1 from "assets/images/kitsios.jpg";
+import team2 from "assets/images/akac.jpg";
 import team3 from "assets/images/pappa.jpg";
 
 function Team() {
@@ -83,7 +83,7 @@ function Team() {
                         </span>
                         <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                           <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                          <a
+                          <a href="tel:+302110130489"
                             style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                           >
                             +30.211.0130489
@@ -91,7 +91,7 @@ function Team() {
                         </span>
                         <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                           <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                          <a
+                          <a href="mailto:akac.attila@certh.gr"
                             style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                           >
                             akac.attila@certh.gr
@@ -133,7 +133,7 @@ function Team() {
                         </span>
                         <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                           <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                          <a
+                          <a href="tel:+302110130490"
                             style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                           >
                             +30.211.0130490
@@ -141,7 +141,7 @@ function Team() {
                         </span>
                         <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                           <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                          <a
+                          <a href="mailto:xkitsios@certh.gr"
                             style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                           >
                             xkitsios@certh.gr
@@ -183,7 +183,7 @@ function Team() {
                         </span>
                         <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                           <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                          <a
+                          <a href="tel:+302111069588"
                             style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                           >
                             +30.211.1069588
@@ -191,7 +191,7 @@ function Team() {
                         </span>
                         <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                           <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                          <a
+                          <a href="mailto:ipappa@certh.gr"
                             style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                           >
                             ipappa@certh.gr

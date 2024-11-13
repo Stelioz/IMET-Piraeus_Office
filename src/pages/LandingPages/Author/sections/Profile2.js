@@ -25,7 +25,7 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-import profilePicture from "assets/images/attila.jpg";
+import profilePicture from "assets/images/akac.jpg";
 import PhoneIcon from "@mui/icons-material/Phone";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";

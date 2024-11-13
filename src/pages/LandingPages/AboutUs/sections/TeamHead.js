@@ -28,7 +28,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 
 // Images
-import team1 from "assets/images/anag.jpg";
+import team1 from "assets/images/anagnostopoulou.jpg";
 
 function TeamHead() {
   return (
@@ -78,7 +78,7 @@ function TeamHead() {
                         </span>
                         <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                           <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                          <a
+                          <a href="tel:+302121069828"
                             style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                           >
                             +30.212.1069828
@@ -86,7 +86,7 @@ function TeamHead() {
                         </span>
                         <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                           <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                          <a
+                          <a href="mailto:a.anagnostopoulou@certh.gr"
                             style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                           >
                             a.anagnostopoulou@certh.gr

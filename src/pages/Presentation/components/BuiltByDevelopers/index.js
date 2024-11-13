@@ -65,32 +65,6 @@ function BuiltByDevelopers() {
             <MKTypography component="li">
               <MKTypography
                 component="a"
-                href="https://www.marinetraffic.com/ais/details/stations/38283"
-                rel="noreferrer"
-                variant="body2"
-                color="white"
-                fontWeight="regular"
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-
-                  "& .material-icons-round": {
-                    fontSize: "1.125rem",
-                    transform: `translateX(3px)`,
-                    transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
-                  },
-
-                  "&:hover .material-icons-round, &:focus .material-icons-round": {
-                    transform: `translateX(6px)`,
-                  },
-                }}
-              >
-                View station on MarineTraffic <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-              </MKTypography>
-            </MKTypography>
-            <MKTypography component="li">
-              <MKTypography
-                component="a"
                 href="https://www.aishub.net/stations/3074"
                 rel="noreferrer"
                 variant="body2"
@@ -117,6 +91,7 @@ function BuiltByDevelopers() {
             <MKTypography component="li">
               <MKTypography
                 component="a"
+                href="https://stations.vesselfinder.com/stations/6635"
                 rel="noreferrer"
                 variant="body2"
                 color="white"
@@ -136,7 +111,33 @@ function BuiltByDevelopers() {
                   },
                 }}
               >
-                Download station&apos;s data (coming soon) <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+                View station on VesselFinder <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              </MKTypography>
+            </MKTypography>
+            <MKTypography component="li">
+              <MKTypography
+                component="a"
+                href="https://www.marinetraffic.com/ais/details/stations/38283"
+                rel="noreferrer"
+                variant="body2"
+                color="white"
+                fontWeight="regular"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+
+                  "& .material-icons-round": {
+                    fontSize: "1.125rem",
+                    transform: `translateX(3px)`,
+                    transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
+                  },
+
+                  "&:hover .material-icons-round, &:focus .material-icons-round": {
+                    transform: `translateX(6px)`,
+                  },
+                }}
+              >
+                View station on MarineTraffic <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </MKTypography>
             </MKTypography>
           </MKTypography>

@@ -25,7 +25,7 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-import profilePicture from "assets/images/xenof.jpg";
+import profilePicture from "assets/images/kitsios.jpg";
 import PhoneIcon from "@mui/icons-material/Phone";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
@@ -92,7 +92,7 @@ function Profile() {
                 <p>
                   <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                     <WorkIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                    <a
+                    <a href="https://maps.app.goo.gl/afqEK3ANYd5imTnRA"
                       style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                     >
                       G.Kasimati 1, Piraeus, Attica, 18531
@@ -100,7 +100,7 @@ function Profile() {
                   </span>
                   <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                     <PhoneIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                    <a
+                    <a href="tel:+302110130490"
                       style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                     >
                       +30.211.0130490
@@ -108,7 +108,7 @@ function Profile() {
                   </span>
                   <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
                     <MailIcon fontSize="small" style={{ marginTop: "0px", marginLeft: "-2px" }} />
-                    <a
+                    <a href="mailto:xkitsios@certh.gr"
                       style={{ color: "black", fontSize: "smaller", marginLeft: "3px", marginRight: "8px" }}
                     >
                       xkitsios@certh.gr
