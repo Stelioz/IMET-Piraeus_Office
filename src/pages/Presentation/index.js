@@ -152,7 +152,7 @@ function home() {
               </MKTypography>
             </Grid>
             <Grid item ml={2} xs={12} sm={12} lg={12}>
-            <MKTypography variant="body1" fontWeight="light" color="black" textAlign="justify">
+            <MKTypography variant="body1" fontWeight="light" textAlign="justify">
               <p>
                 Contact Details
                 <span style={{ display: "flex", alignItems: "center", marginTop: "4px" }}>
